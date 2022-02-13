@@ -1,5 +1,96 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="events mt-16">
+    <v-row no-gutters justify="center">
+      <h1 class="events__heading mb-6">Upcoming Events</h1>
+    </v-row>
+    <transition-group appear name="events__slide">
+      <v-row
+        no-gutters
+        justify="start"
+        align="center"
+        v-for="item in upcomingEvents"
+        :key="item.index"
+      >
+        <Event
+          :link="item.link"
+          :image="item.image"
+          :title="item.title"
+          :displayDate="item.displayDate"
+          :who="item.who"
+          :where="item.where"
+          :what="item.what"
+          :description="item.description"
+        />
+      </v-row>
+    </transition-group>
+    <hr class="events__hr mt-4 mb-8" />
+    <v-row no-gutters justify="center">
+      <h1 class="events__heading mb-6">Past Events</h1>
+    </v-row>
+    <transition-group appear name="events__slide">
+      <v-row no-gutters justify="center" v-for="item in pastEvents" :key="item.index">
+        <Event
+          :link="item.link"
+          :image="item.image"
+          :title="item.title"
+          :displayDate="item.displayDate"
+          :who="item.who"
+          :where="item.where"
+          :what="item.what"
+          :description="item.description"
+        />
+      </v-row>
+    </transition-group>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import Event from "@/components/Event.vue";
+import { Events } from "@/constants";
+
+export default Vue.extend({
+  name: "Events",
+
+  components: { Event },
+  data: () => {
+    const pastEvents = Events.events
+      .filter((e) => new Date(e.date) < new Date())
+      .sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
+    const upcomingEvents = Events.events
+      .filter((e) => new Date(e.date) > new Date())
+      .sort((a, b) => (new Date(a.date) > new Date(b.date) ? 1 : -1));
+
+    return {
+      pastEvents,
+      upcomingEvents,
+    };
+  },
+});
+</script>
+
+<style lang="scss" scoped>
+.events {
+  box-sizing: border-box;
+  max-width: 1240px;
+  padding: 0;
+  margin: 0 auto;
+  color: white;
+
+  &__heading {
+    color: var(--c-white);
+    font: normal normal normal 52px raleway, sans-serif;
+    text-align: center;
+  }
+
+  &__slide-enter {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  &__slide-enter-active {
+    transition: all 0.5s ease;
+    transition-delay: calc(0.1s * var(--index));
+  }
+}
+</style>

@@ -23,9 +23,7 @@ import Vue from "vue";
 import { Bio } from "@/constants";
 
 export default Vue.extend({
-  name: "Home",
-
-  components: {},
+  name: "Bio",
   data: () => ({
     Bio,
   }),
@@ -46,9 +44,6 @@ export default Vue.extend({
       font-size: 16px !important;
       color: white !important;
     }
-  }
-
-  &__image {
   }
 }
 </style>
