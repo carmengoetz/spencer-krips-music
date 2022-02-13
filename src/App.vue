@@ -1,32 +1,92 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <Navigation />
+    <v-main class="my-16">
+      <transition name="component-fade" mode="out-in">
+        <router-view />
+      </transition>
+    </v-main>
+    <Footer />
+  </v-app>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import Navigation from "@/components/Navigation.vue";
+import Footer from "./components/Footer.vue";
+
+export default Vue.extend({
+  components: { Navigation, Footer },
+  name: "App",
+
+  data: () => ({
+    //
+  }),
+});
+</script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: #163033;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#nav {
-  padding: 30px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+::selection {
+  background: blue;
+  text-shadow: none;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #015869;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a4d58;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #663841;
+}
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.component-fade-enter-from,
+.component-fade-leave-to {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: 2s all ease-in-out;
 }
 </style>
