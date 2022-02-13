@@ -55,7 +55,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import logo from "@/assets/Logo-01.png";
+import logo from "@/assets/logo.png";
 
 export default Vue.extend({
   name: "Navigation",
