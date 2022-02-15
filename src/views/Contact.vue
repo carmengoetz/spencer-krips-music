@@ -67,22 +67,22 @@ export default Vue.extend({
   },
 
   computed: {
-    formIsValid() {
-      return (
-        this.form.name &&
-        this.form.email &&
-        /.+@.+/.test(this.form.email) &&
-        this.form.message
-      );
-    },
+    // formIsValid() {
+    //   return (
+    //     this.form.name &&
+    //     this.form.email &&
+    //     /.+@.+/.test(this.form.email) &&
+    //     this.form.message
+    //   );
+    // },
   },
 
   methods: {
     resetForm() {
       this.form = Object.assign({}, this.defaultForm);
-      this.$refs.form.reset();
+      // this.$refs.form.reset();
     },
-    sendEmail(e) {
+    sendEmail(e: { target: string | HTMLFormElement }) {
       emailjs.sendForm("service", "template", e.target, "user").then(
         (result) => {
           alert("Message Sent!");
