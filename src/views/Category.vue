@@ -1,8 +1,8 @@
 <template>
   <div>
-    <CategoryNav />
-    <v-row no-gutters class="shop mt-8">
-      <v-col cols="3" v-for="product in Shop.products" :key="product.index">
+    <CategoryNav :active="$route.params.id" />
+    <v-row no-gutters class="category mt-8">
+      <v-col cols="3" v-for="product in categoryProducts()" :key="product.index">
         <ProductCard
           :id="product.id"
           :image="product.image"
@@ -21,10 +21,18 @@ import ProductCard from "@/components/ProductCard.vue";
 import { Shop } from "@/constants";
 
 export default Vue.extend({
-  name: "Shop",
+  name: "Category",
   components: {
     CategoryNav,
     ProductCard,
+  },
+  methods: {
+    categoryProducts() {
+      const id = this.$route.params.id;
+      return Shop.products.filter((product) =>
+        product.categories.find((cat) => cat === id)
+      );
+    },
   },
   data: () => ({
     Shop,
@@ -33,7 +41,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.shop {
+.category {
   box-sizing: border-box;
   max-width: 1240px;
   padding: 0;

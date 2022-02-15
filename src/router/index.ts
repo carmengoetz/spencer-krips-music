@@ -40,6 +40,19 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "contact" */ "../views/Contact.vue"),
   },
+  {
+    path: "/category/:id",
+    name: "Category",
+    component: () =>
+      import(/* webpackChunkName: "category" */ "../views/Category.vue"),
+  },
+
+  {
+    path: "/product/:id",
+    name: "Product",
+    component: () =>
+      import(/* webpackChunkName: "product" */ "../views/Product.vue"),
+  },
 ];
 
 const router = new VueRouter({

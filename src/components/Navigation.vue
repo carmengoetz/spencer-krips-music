@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar absolute color="#8a4d58" flat height="84" class="nav px-0 px-md-16">
+  <v-app-bar absolute color="#8a4d58" flat height="80" class="nav px-0 px-md-16">
     <!-- <v-menu class="d-inline d-md-none">
       <template #activator="{ props }">
         <v-img
@@ -78,7 +78,7 @@ export default Vue.extend({
 .nav {
   &__link {
     font-weight: 400;
-    font-family: "Raleway", sans-serif;
+    font: normal normal normal 16px raleway, sans-serif;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
