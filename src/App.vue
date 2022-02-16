@@ -97,4 +97,12 @@ img::-moz-selection {
     font: normal normal normal 16px raleway, sans-serif;
   }
 }
+
+.btn {
+  text-transform: unset !important;
+}
+
+.v-btn--active::before {
+  opacity: 0 !important;
+}
 </style>

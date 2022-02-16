@@ -173,8 +173,4 @@ export default Vue.extend({
     }
   }
 }
-
-.btn {
-  text-transform: unset !important;
-}
 </style>

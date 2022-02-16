@@ -1,29 +1,28 @@
 <template>
-  <v-app-bar absolute color="#8a4d58" flat height="80" class="nav px-0 px-md-16">
-    <v-img :src="logo" max-width="300px" alt="Spencer Krips Music">
-      <router-link
-        class="nav__logo"
-        data-text="Spencer Krips Music"
-        :to="{
-          name: 'Home',
-        }"
-      >
-      </router-link>
-    </v-img>
-
-    <v-spacer></v-spacer>
-
+  <v-app-bar absolute color="#8a4d58" flat height="78" class="nav px-0 px-md-16">
     <router-link
-      v-for="page in pages"
-      :key="page.name"
-      class="nav__link px-4 py-7 d-none d-md-inline"
+      class="nav__logo"
+      data-text="Spencer Krips Music"
       :to="{
-        name: page.name,
+        name: 'Home',
       }"
     >
-      {{ page.name }}
+      <v-img :src="logo" alt="Spencer Krips Music" class="nav__logo"> </v-img>
     </router-link>
 
+    <v-spacer></v-spacer>
+    <div class="nav__links">
+      <router-link
+        v-for="page in pages"
+        :key="page.name"
+        class="nav__link px-4 py-7 d-none d-md-inline"
+        :to="{
+          name: page.name,
+        }"
+      >
+        {{ page.name }}
+      </router-link>
+    </div>
     <v-menu class="d-inline d-md-none mt-16">
       <template v-slot:activator="{ on, attrs }">
         <div v-bind="attrs" v-on="on" class="nav__menu d-inline d-md-none">
@@ -74,6 +73,20 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .nav {
+  &__logo {
+    width: 300px;
+    @media (max-width: 600px) {
+      width: 200px;
+    }
+  }
+
+  &__links {
+    .router-link-exact-active {
+      border-bottom: solid 2px #568e55;
+      border-top: solid 2px transparent;
+    }
+  }
+
   &__link {
     font-weight: 400;
     font: normal normal normal 16px raleway, sans-serif;
@@ -97,14 +110,5 @@ export default Vue.extend({
       display: block;
     }
   }
-
-  &__links {
-    // background-color: #8a4d58 !important;
-  }
-}
-
-.router-link-exact-active {
-  border-bottom: solid 2px #568e55;
-  border-top: solid 2px transparent;
 }
 </style>
