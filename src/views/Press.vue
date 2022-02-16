@@ -1,5 +1,5 @@
 <template>
-  <div class="press mt-16">
+  <div class="press mt-6 mt-md-16">
     <div class="press__articles">
       <transition-group appear name="press__slide">
         <v-row v-for="item in Press.articles" :key="item.index">

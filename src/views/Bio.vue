@@ -1,15 +1,15 @@
 <template>
-  <v-row no-gutters class="bio mt-16">
-    <v-col>
-      <v-img :src="Bio.image" alt="Spencer Krips" max-width="600" class="bio__image" />
+  <v-row no-gutters class="bio mt-10 mt-md-16">
+    <v-col cols="12" md="6">
+      <v-img :src="Bio.image" alt="Spencer Krips" class="bio__image" />
     </v-col>
-    <v-col class="bio__description">
+    <v-col cols="12" md="6" class="bio__description">
       <v-card flat tile color="transparent" class="bio__description--paragraphs">
         <v-card-text
           v-for="paragraph in Bio.paragraphs"
           :key="paragraph.index"
           color="white"
-          class="bio__description--paragraph pt-0"
+          class="bio__description--paragraph pb-0 pb-md-4 pt-md-0"
         >
           {{ paragraph.text }}
         </v-card-text>
@@ -36,6 +36,14 @@ export default Vue.extend({
   max-width: 1240px;
   padding: 0;
   margin: 0 auto;
+
+  &__image {
+    width: 600px;
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+  }
 
   &__description {
     color: white;

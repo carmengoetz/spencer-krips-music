@@ -1,8 +1,8 @@
 <template>
-  <v-footer top height="60px" color="#015869" class="footer px-8">
+  <v-footer color="#015869" class="footer px-8">
     <v-row align="center">
       <v-col cols="12" sm="6">
-        <v-row align="center" justify-sm="start">
+        <v-row align="center" justify="center" justify-md="start">
           <v-card color="transparent" bottom flat tile>
             <v-card-text class="footer__copyright">
               &copy; {{ new Date().getFullYear() }} — Spencer Krips |
@@ -77,7 +77,12 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .footer {
+  height: 60px;
   background-color: #015869 !important;
+
+  @media (max-width: 600px) {
+    height: 100px;
+  }
 
   &__copyright {
     color: white !important;

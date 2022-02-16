@@ -4,7 +4,7 @@
       :items="breadcrumbs()"
       divider="-"
       color="white"
-      class="product__breadcrumbs mb-10 ml-16"
+      class="product__breadcrumbs mb-2 mb-md-6 ml-md-16"
     ></v-breadcrumbs>
     <div id="product-component-1644890831058" :product="id()"></div>
   </div>
@@ -96,6 +96,7 @@ export default Vue.extend({
                   "font-weight": "normal",
                   "font-size": "26px",
                   color: "#ffffff",
+                  "margin-left": "4px",
                 },
                 button: {
                   "font-family": "Raleway, sans-serif",
@@ -112,6 +113,7 @@ export default Vue.extend({
                   "border-radius": "0px",
                   "padding-left": "100px",
                   "padding-right": "100px",
+                  width: "100%",
                 },
                 quantityInput: {
                   "font-size": "16px",
@@ -122,6 +124,7 @@ export default Vue.extend({
                   "font-family": "Raleway, sans-serif",
                   "font-size": "18px",
                   color: "#ffffff",
+                  "margin-left": "4px",
                 },
                 compareAt: {
                   "font-family": "Raleway, sans-serif",
@@ -136,14 +139,15 @@ export default Vue.extend({
                 description: {
                   "font-family": "Raleway, sans-serif",
                   color: "#ffffff",
+                  margin: "28px 4px 0 4px",
                 },
               },
               layout: "horizontal",
               contents: {
                 img: false,
                 imgWithCarousel: true,
-                button: false,
-                buttonWithQuantity: true,
+                button: true,
+                buttonWithQuantity: false,
                 description: true,
               },
               width: "100%",
@@ -238,6 +242,7 @@ export default Vue.extend({
                 label: {
                   "font-family": "Raleway, sans-serif",
                   color: "#ffffff",
+                  "margin-left": "4px",
                 },
                 select: {
                   "font-family": "Raleway, sans-serif",

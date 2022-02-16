@@ -1,5 +1,5 @@
 <template>
-  <div class="contact mt-16">
+  <div class="contact mt-10 mt-md-16">
     <v-row no-gutters justify="center">
       <h1 class="contact__header">Contact Spencer Krips</h1>
     </v-row>
@@ -49,6 +49,16 @@
 <script lang="ts">
 import Vue from "vue";
 import emailjs from "emailjs-com";
+declare module "vue/types/vue" {
+  interface Vue {
+    form: {
+      name: string;
+      email: string;
+      subject: string;
+      message: string;
+    };
+  }
+}
 
 export default Vue.extend({
   name: "Contact",
@@ -67,33 +77,35 @@ export default Vue.extend({
   },
 
   computed: {
-    // formIsValid() {
-    //   return (
-    //     this.form.name &&
-    //     this.form.email &&
-    //     /.+@.+/.test(this.form.email) &&
-    //     this.form.message
-    //   );
-    // },
+    formIsValid() {
+      return (
+        this.form.name &&
+        this.form.email &&
+        /.+@.+/.test(this.form.email) &&
+        this.form.message
+      );
+    },
   },
 
   methods: {
-    resetForm() {
-      this.form = Object.assign({}, this.defaultForm);
-      // this.$refs.form.reset();
-    },
     sendEmail(e: { target: string | HTMLFormElement }) {
-      emailjs.sendForm("service", "template", e.target, "user").then(
-        (result) => {
-          alert("Message Sent!");
-          this.resetForm();
-          console.log("SUCCESS!", result.status, result.text);
-        },
-        (error) => {
-          alert("There was a problem sending your message, please try again");
-          console.log("FAILED...", error);
-        }
-      );
+      emailjs
+        .sendForm(
+          "service_4ysvek7",
+          "template_r185rjp",
+          e.target,
+          "user_20V2lpCRDxS6tEJvEjxAP"
+        )
+        .then(
+          (result) => {
+            alert("Message Sent!");
+            console.log("SUCCESS!", result.status, result.text);
+          },
+          (error) => {
+            alert("There was a problem sending your message, please try again");
+            console.log("FAILED...", error);
+          }
+        );
     },
   },
 });
@@ -109,6 +121,10 @@ export default Vue.extend({
   &__header {
     color: white;
     font: normal normal normal 60px raleway, sans-serif;
+
+    @media (max-width: 600px) {
+      font: normal normal normal 32px raleway, sans-serif;
+    }
   }
 
   &__form {

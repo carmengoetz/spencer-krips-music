@@ -2,7 +2,13 @@
   <div>
     <CategoryNav :active="$route.params.id" />
     <v-row no-gutters class="category mt-8">
-      <v-col cols="3" v-for="product in categoryProducts()" :key="product.index">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+        v-for="product in categoryProducts()"
+        :key="product.index"
+      >
         <ProductCard
           :id="product.id"
           :image="product.image"

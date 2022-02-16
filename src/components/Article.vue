@@ -1,10 +1,15 @@
 <template>
   <a :href="link" target="_blank" class="article pa-6">
     <v-row no-gutters algin="center">
-      <v-col cols="3">
-        <v-img :src="image" :alt="title" width="200" class="article__image" />
+      <v-col cols="12" md="3">
+        <v-img
+          :src="image"
+          :alt="title"
+          width="200"
+          class="article__image mx-auto mb-4"
+        />
       </v-col>
-      <v-col cols="9" class="article__text">
+      <v-col cols="12" md="3" class="article__text">
         <h3 class="article__title">{{ title }}</h3>
         <div class="article__publication-date">{{ publication }} - {{ date }}</div>
         <p class="article__description">{{ description }}</p>

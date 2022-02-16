@@ -1,7 +1,7 @@
 <template>
-  <div class="events mt-16">
+  <div class="events mt-10 mt-md-16">
     <v-row no-gutters justify="center">
-      <h1 class="events__heading mb-6">Upcoming Events</h1>
+      <h1 class="events__heading mb-4 mb-md-6">Upcoming Events</h1>
     </v-row>
     <transition-group appear name="events__slide">
       <v-row
@@ -25,7 +25,7 @@
     </transition-group>
     <hr class="events__hr mt-4 mb-8" />
     <v-row no-gutters justify="center">
-      <h1 class="events__heading mb-6">Past Events</h1>
+      <h1 class="events__heading mb-4 mb-md-6">Past Events</h1>
     </v-row>
     <transition-group appear name="events__slide">
       <v-row no-gutters justify="center" v-for="item in pastEvents" :key="item.index">
@@ -81,6 +81,10 @@ export default Vue.extend({
     color: var(--c-white);
     font: normal normal normal 52px raleway, sans-serif;
     text-align: center;
+
+    @media (max-width: 600px) {
+      font: normal normal normal 32px raleway, sans-serif;
+    }
   }
 
   &__slide-enter {

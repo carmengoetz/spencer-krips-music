@@ -38,6 +38,10 @@ export default Vue.extend({
     color: white;
     font: normal normal normal 16px raleway, sans-serif;
     text-align: start !important;
+
+    @media (max-width: 600px) {
+      text-align: center !important;
+    }
   }
 }
 </style>

@@ -1,32 +1,5 @@
 <template>
   <v-app-bar absolute color="#8a4d58" flat height="80" class="nav px-0 px-md-16">
-    <!-- <v-menu class="d-inline d-md-none">
-      <template #activator="{ props }">
-        <v-img
-          v-bind="props"
-          :src="logo"
-          max-width="200px"
-          alt="carmen goetz"
-          class="nav__logo--image d-inline d-md-none"
-        >
-        </v-img>
-      </template>
-      <v-card width="300" class="nav__links--mobile d-inline d-md-none">
-        <v-list class="pt-0">
-          <v-list-item v-for="page in pages" :key="page.index">
-            <router-link
-              class="nav__link nav__link--mobile glitch text-secondary-darken-1 mx-auto"
-              :data-text="page.name"
-              :to="{
-                name: page.name,
-              }"
-            >
-              {{ page.name }}
-            </router-link>
-          </v-list-item>
-        </v-list>
-      </v-card>
-    </v-menu> -->
     <v-img :src="logo" max-width="300px" alt="Spencer Krips Music">
       <router-link
         class="nav__logo"
@@ -43,13 +16,38 @@
     <router-link
       v-for="page in pages"
       :key="page.name"
-      class="nav__link px-4 py-7"
+      class="nav__link px-4 py-7 d-none d-md-inline"
       :to="{
         name: page.name,
       }"
     >
       {{ page.name }}
     </router-link>
+
+    <v-menu class="d-inline d-md-none mt-16">
+      <template v-slot:activator="{ on, attrs }">
+        <div v-bind="attrs" v-on="on" class="nav__menu d-inline d-md-none">
+          <span class="nav__menu--line"></span>
+          <span class="nav__menu--line"></span>
+          <span class="nav__menu--line"></span>
+        </div>
+      </template>
+      <v-card class="nav__links--mobile d-inline d-md-none">
+        <v-list tile color="#8a4d58" width="300" class="pt-0">
+          <v-list-item v-for="page in pages" :key="page.index">
+            <router-link
+              class="nav__link nav__link--mobile mx-auto"
+              :data-text="page.name"
+              :to="{
+                name: page.name,
+              }"
+            >
+              {{ page.name }}
+            </router-link>
+          </v-list-item>
+        </v-list>
+      </v-card>
+    </v-menu>
   </v-app-bar>
 </template>
 
@@ -87,6 +85,21 @@ export default Vue.extend({
       border-bottom: solid 2px #568e55;
       border-top: solid 2px transparent;
     }
+  }
+  &__menu {
+    cursor: pointer;
+
+    &--line {
+      background-color: ghostwhite;
+      width: 24px;
+      height: 2px;
+      margin: 3px 0;
+      display: block;
+    }
+  }
+
+  &__links {
+    // background-color: #8a4d58 !important;
   }
 }
 

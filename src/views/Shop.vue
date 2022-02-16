@@ -2,7 +2,13 @@
   <div>
     <CategoryNav />
     <v-row no-gutters class="shop mt-8">
-      <v-col cols="3" v-for="product in Shop.products" :key="product.index">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+        v-for="product in Shop.products"
+        :key="product.index"
+      >
         <ProductCard
           :id="product.id"
           :image="product.image"
