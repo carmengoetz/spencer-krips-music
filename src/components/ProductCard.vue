@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="product d-flex flex-column pa-4"
-    height="400"
+    height="350"
     elevation="0"
     color="transparent"
     tile
@@ -12,8 +12,8 @@
   >
     <v-img width="250" :src="image" class="align-self-center" />
     <v-spacer></v-spacer>
-    <div class="product__name mt-4">{{ name }}</div>
-    <div class="product__price">CA${{ price }}.00</div>
+    <div class="product__name mt-4 ml-4">{{ name }}</div>
+    <div class="product__price ml-4">CA${{ price }}.00</div>
   </v-card>
 </template>
 

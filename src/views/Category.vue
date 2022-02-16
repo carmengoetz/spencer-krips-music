@@ -30,7 +30,7 @@ export default Vue.extend({
     categoryProducts() {
       const id = this.$route.params.id;
       return Shop.products.filter((product) =>
-        product.categories.find((cat) => cat.toString() === id)
+        product.categories.find((cat) => cat.toString() == id)
       );
     },
   },

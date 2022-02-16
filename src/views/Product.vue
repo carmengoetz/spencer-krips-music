@@ -1,11 +1,18 @@
-<template id="test" :product="id()">
-  <div id="test" class="bio mt-16" :product="id()">
+<template>
+  <div class="product mt-4" :product="id()">
+    <v-breadcrumbs
+      :items="breadcrumbs()"
+      divider="-"
+      color="white"
+      class="product__breadcrumbs mb-10 ml-16"
+    ></v-breadcrumbs>
     <div id="product-component-1644890831058" :product="id()"></div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import { Shop } from "@/constants";
 declare const window: any;
 declare const ShopifyBuy: any;
 
@@ -14,6 +21,28 @@ export default Vue.extend({
   methods: {
     id() {
       return this.$route.params.id;
+    },
+    breadcrumbs() {
+      const id = this.$route.params.id;
+      const product = Shop.products.find((prod) => prod.id.toString() == id);
+
+      const categories = Shop.categories.filter((cat) => {
+        return product?.categories.find((prodCat) => prodCat === cat.id);
+      });
+
+      const items = categories.map((cat) => ({
+        text: cat.title,
+        disabled: false,
+        href: "../category/" + cat.id,
+      }));
+      return [
+        {
+          text: "Shop",
+          disabled: false,
+          href: "../shop",
+        },
+        ...items,
+      ];
     },
   },
   mounted() {
@@ -265,4 +294,11 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.product {
+  box-sizing: border-box;
+  max-width: 1240px;
+  padding: 0;
+  margin: 0 auto;
+}
+</style>

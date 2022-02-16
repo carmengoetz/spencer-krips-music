@@ -89,4 +89,12 @@ img::-moz-selection {
   opacity: 0;
   transition: 2s all ease-in-out;
 }
+
+.v-breadcrumbs {
+  &__item,
+  &__divider {
+    color: white !important;
+    font: normal normal normal 16px raleway, sans-serif;
+  }
+}
 </style>

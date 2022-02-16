@@ -51,7 +51,7 @@ export const Shop: Shop = {
       categories: [391403045112, 391403176184],
       name: "behold, the sonic universe - CD",
       price: 15,
-      image: require("../assets/products/behold, the sonic universe - CD.webp"),
+      image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
       index: 1,
@@ -59,7 +59,7 @@ export const Shop: Shop = {
       categories: [391403045112],
       name: "behold, the sonic universe",
       price: 45,
-      image: require("../assets/products/behold, the sonic universe - CD.webp"),
+      image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
       index: 2,
@@ -67,7 +67,7 @@ export const Shop: Shop = {
       categories: [391403045112, 391403077880, 391403143416],
       name: "Jenny",
       price: 75,
-      image: require("../assets/products/Jenny.jpeg"),
+      image: require("../assets/products/jenny.png"),
     },
     {
       index: 3,
@@ -75,7 +75,7 @@ export const Shop: Shop = {
       categories: [391403045112],
       name: "Pseudopop in Teal",
       price: 20,
-      image: require("../assets/products/Pseudopop in Teal.png"),
+      image: require("../assets/products/pseudopop-in-teal.png"),
     },
     {
       index: 4,
@@ -83,7 +83,7 @@ export const Shop: Shop = {
       categories: [391403045112, 391403110648],
       name: "See How Low the Moon Hangs",
       price: 3,
-      image: require("../assets/products/See How Low the Moon Hangs.webp"),
+      image: require("../assets/products/see-how-low-the-moon-hangs.png"),
     },
     {
       index: 5,
@@ -91,7 +91,7 @@ export const Shop: Shop = {
       categories: [391403045112, 391403077880, 391403143416],
       name: "to be whole",
       price: 100,
-      image: require("../assets/products/to be whole.webp"),
+      image: require("../assets/products/to-be-whole.png"),
     },
     {
       index: 6,
@@ -99,7 +99,7 @@ export const Shop: Shop = {
       categories: [391403045112],
       name: "Ward Lock",
       price: 70,
-      image: require("../assets/products/Ward Lock.webp"),
+      image: require("../assets/products/ward-lock.png"),
     },
     {
       index: 7,
@@ -107,7 +107,7 @@ export const Shop: Shop = {
       categories: [391403045112, 391403110648],
       name: "what counts as silence",
       price: 3,
-      image: require("../assets/products/what counts as silence.webp"),
+      image: require("../assets/products/what-counts-as-silence.png"),
     },
   ],
 };
