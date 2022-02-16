@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar absolute color="#8a4d58" flat height="78" class="nav px-0 px-md-16">
+  <v-app-bar absolute color="#8a4d58" flat height="78" class="nav px-0 px-lg-16">
     <router-link
       class="nav__logo"
       data-text="Spencer Krips Music"
@@ -23,7 +23,11 @@
         {{ page.name }}
       </router-link>
     </div>
-    <v-menu class="d-inline d-md-none mt-16">
+    <v-menu
+      nudge-bottom="40"
+      max-width="960"
+      class="nav__mobile d-inline d-md-none mt-16"
+    >
       <template v-slot:activator="{ on, attrs }">
         <div v-bind="attrs" v-on="on" class="nav__menu d-inline d-md-none">
           <span class="nav__menu--line"></span>
@@ -32,10 +36,10 @@
         </div>
       </template>
       <v-card class="nav__links--mobile d-inline d-md-none">
-        <v-list tile color="#8a4d58" width="300" class="pt-0">
+        <v-list tile color="#8a4d58" class="pt-0">
           <v-list-item v-for="page in pages" :key="page.index">
             <router-link
-              class="nav__link nav__link--mobile mx-auto"
+              class="nav__link nav__link--mobile py-4 text-center px-16"
               :data-text="page.name"
               :to="{
                 name: page.name,
@@ -98,6 +102,10 @@ export default Vue.extend({
       border-bottom: solid 2px #568e55;
       border-top: solid 2px transparent;
     }
+
+    &--mobile {
+      width: 100%;
+    }
   }
   &__menu {
     cursor: pointer;
@@ -110,5 +118,14 @@ export default Vue.extend({
       display: block;
     }
   }
+
+  &__mobile {
+    width: 100% !important;
+  }
+}
+
+.v-menu__content {
+  width: 100% !important;
+  box-shadow: none;
 }
 </style>

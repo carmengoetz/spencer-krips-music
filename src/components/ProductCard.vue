@@ -10,7 +10,12 @@
       params: { id: id },
     }"
   >
-    <v-img width="250" :src="image" class="align-self-center" />
+    <v-img width="250" :src="image" class="align-self-center"
+      ><template v-slot:placeholder>
+        <v-row class="fill-height ma-0" align="center" justify="center">
+          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+        </v-row> </template
+    ></v-img>
     <v-spacer></v-spacer>
     <div class="product__name mt-4 ml-4">{{ name }}</div>
     <div class="product__price ml-4">CA${{ price }}.00</div>

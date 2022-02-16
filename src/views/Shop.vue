@@ -1,6 +1,8 @@
 <template>
   <div>
-    <CategoryNav />
+    <transition-group appear name="shop__fade">
+      <CategoryNav key="0" />
+    </transition-group>
     <v-row no-gutters class="shop mt-8">
       <v-col
         cols="12"
@@ -9,12 +11,15 @@
         v-for="product in Shop.products"
         :key="product.index"
       >
-        <ProductCard
-          :id="product.id"
-          :image="product.image"
-          :name="product.name"
-          :price="product.price"
-        />
+        <transition-group appear name="shop__slide">
+          <ProductCard
+            :id="product.id"
+            :image="product.image"
+            :name="product.name"
+            :price="product.price"
+            :key="product.index"
+          />
+        </transition-group>
       </v-col>
     </v-row>
   </div>
@@ -44,5 +49,25 @@ export default Vue.extend({
   max-width: 1240px;
   padding: 0;
   margin: 0 auto;
+
+  &__fade-enter {
+    opacity: 0;
+    transition: 3s all ease-in-out;
+  }
+
+  &__fade-enter-active {
+    transition: all 2s ease;
+    transition-delay: calc(0.1s * var(--index));
+  }
+
+  &__slide-enter {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  &__slide-enter-active {
+    transition: all 0.5s ease;
+    transition-delay: calc(0.1s * var(--index));
+  }
 }
 </style>

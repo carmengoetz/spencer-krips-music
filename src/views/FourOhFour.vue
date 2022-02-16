@@ -1,7 +1,15 @@
 <template>
   <div class="four-oh-four mt-10 mt-md-16">
     <v-row no-gutters align="center" justify="center">
-      <v-img :src="logo" alt="Spencer Krips Music" class="four-oh-four__image" />
+      <v-img :src="logo" alt="Spencer Krips Music" class="four-oh-four__image"
+        ><template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row> </template
+      ></v-img>
     </v-row>
     <v-row no-gutters align="center" justify="center">
       <v-btn

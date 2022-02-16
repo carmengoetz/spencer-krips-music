@@ -1,12 +1,15 @@
 <template>
   <div class="product mt-4" :product="id()">
-    <v-breadcrumbs
-      :items="breadcrumbs()"
-      divider="-"
-      color="white"
-      class="product__breadcrumbs mb-2 mb-md-6 ml-md-16"
-    ></v-breadcrumbs>
-    <div id="product-component-1644890831058" :product="id()"></div>
+    <transition-group appear name="product__fade">
+      <v-breadcrumbs
+        :items="breadcrumbs()"
+        divider="-"
+        color="white"
+        class="product__breadcrumbs mb-2 mb-md-6 ml-md-16"
+        key="0"
+      ></v-breadcrumbs>
+      <div id="product-component-1644890831058" :product="id()" key="1"></div>
+    </transition-group>
   </div>
 </template>
 
@@ -305,5 +308,15 @@ export default Vue.extend({
   max-width: 1240px;
   padding: 0;
   margin: 0 auto;
+
+  &__fade-enter {
+    opacity: 0;
+    transition: 3s all ease-in-out;
+  }
+
+  &__fade-enter-active {
+    transition: all 2s ease;
+    transition-delay: calc(0.1s * var(--index));
+  }
 }
 </style>

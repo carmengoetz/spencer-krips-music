@@ -1,48 +1,50 @@
 <template>
   <div class="contact mt-10 mt-md-16">
-    <v-row no-gutters justify="center">
-      <h1 class="contact__header">Contact Spencer Krips</h1>
-    </v-row>
-    <form class="contact__form my-6 mx-auto" @submit.prevent="sendEmail">
-      <v-row no-gutters class="mb-5">
-        <input
-          placeholder="Name *"
-          required
-          name="form_name"
-          type="text"
-          class="contact__form--input px-2"
-        />
+    <transition-group appear name="contact__fade">
+      <v-row no-gutters justify="center" key="0">
+        <h1 class="contact__header">Contact Spencer Krips</h1>
       </v-row>
-      <v-row no-gutters class="mb-5">
-        <input
-          placeholder="Email *"
-          required
-          name="form_email"
-          type="email"
-          class="contact__form--input px-2"
-        />
-      </v-row>
-      <v-row no-gutters class="mb-5">
-        <input
-          placeholder="Subject"
-          name="form_subject"
-          type="text"
-          class="contact__form--input px-2"
-        />
-      </v-row>
-      <v-row no-gutters class="mb-5">
-        <textarea
-          placeholder="Message *"
-          name="form_message"
-          rows="6"
-          required
-          class="contact__form--message pa-2"
-        />
-      </v-row>
-      <v-row no-gutters>
-        <button type="submit" class="contact__form--button">Send message</button>
-      </v-row>
-    </form>
+      <form class="contact__form my-6 mx-auto" @submit.prevent="sendEmail" key="0">
+        <v-row no-gutters class="mb-5">
+          <input
+            placeholder="Name *"
+            required
+            name="form_name"
+            type="text"
+            class="contact__form--input px-2"
+          />
+        </v-row>
+        <v-row no-gutters class="mb-5">
+          <input
+            placeholder="Email *"
+            required
+            name="form_email"
+            type="email"
+            class="contact__form--input px-2"
+          />
+        </v-row>
+        <v-row no-gutters class="mb-5">
+          <input
+            placeholder="Subject"
+            name="form_subject"
+            type="text"
+            class="contact__form--input px-2"
+          />
+        </v-row>
+        <v-row no-gutters class="mb-5">
+          <textarea
+            placeholder="Message *"
+            name="form_message"
+            rows="6"
+            required
+            class="contact__form--message pa-2"
+          />
+        </v-row>
+        <v-row no-gutters>
+          <button type="submit" class="contact__form--button">Send message</button>
+        </v-row>
+      </form>
+    </transition-group>
   </div>
 </template>
 
@@ -167,6 +169,16 @@ export default Vue.extend({
           center/15000%;
       }
     }
+  }
+
+  &__fade-enter {
+    opacity: 0;
+    transition: 3s all ease-in-out;
+  }
+
+  &__fade-enter-active {
+    transition: all 2s ease;
+    transition-delay: calc(0.1s * var(--index));
   }
 }
 </style>
