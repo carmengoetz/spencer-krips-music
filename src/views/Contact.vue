@@ -91,12 +91,13 @@ export default Vue.extend({
 
   methods: {
     sendEmail(e: { target: string | HTMLFormElement }) {
+      console.log(process.env.VUE_APP_EMAILJS_USER);
       emailjs
         .sendForm(
-          "service_4ysvek7",
-          "template_r185rjp",
+          process.env.VUE_APP_EMAILJS_SERVICE,
+          process.env.VUE_APP_EMAILJS_TEMPLATE,
           e.target,
-          "user_20V2lpCRDxS6tEJvEjxAP"
+          process.env.VUE_APP_EMAILJS_USER
         )
         .then(
           (result) => {
