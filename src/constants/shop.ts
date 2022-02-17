@@ -121,7 +121,7 @@ export const Shop: Shop = {
       name: "Jenny - April Assman",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/jenny-unisex-black.jpeg"),
+      image: require("../assets/products/jenny-unisex-black.png"),
     },
     {
       index: 9,
@@ -130,7 +130,7 @@ export const Shop: Shop = {
       name: "Jenny - April Assman",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/jenny-women-black.jpeg"),
+      image: require("../assets/products/jenny-women-black.png"),
     },
     {
       index: 10,
@@ -139,7 +139,7 @@ export const Shop: Shop = {
       name: "Jenny - April Assman",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/jenny-unisex-white.jpeg"),
+      image: require("../assets/products/jenny-unisex-white.png"),
     },
     {
       index: 11,
@@ -148,7 +148,7 @@ export const Shop: Shop = {
       name: "Jenny - April Assman",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/jenny-women-white.jpeg"),
+      image: require("../assets/products/jenny-women-white.png"),
     },
     {
       index: 12,
@@ -157,7 +157,7 @@ export const Shop: Shop = {
       name: "Kibo - Spencer Krips",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/kibo-unisex-black.jpeg"),
+      image: require("../assets/products/kibo-unisex-black.png"),
     },
     {
       index: 13,
@@ -166,7 +166,7 @@ export const Shop: Shop = {
       name: "Kibo - Spencer Krips",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/kibo-women-black.jpeg"),
+      image: require("../assets/products/kibo-women-black.png"),
     },
     {
       index: 14,
@@ -175,7 +175,7 @@ export const Shop: Shop = {
       name: "Kibo - Spencer Krips",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/kibo-unisex-white.jpeg"),
+      image: require("../assets/products/kibo-unisex-white.png"),
     },
     {
       index: 15,
@@ -184,7 +184,7 @@ export const Shop: Shop = {
       name: "Kibo - Spencer Krips",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/kibo-women-white.jpeg"),
+      image: require("../assets/products/kibo-women-white.png"),
     },
     {
       index: 16,
@@ -193,7 +193,7 @@ export const Shop: Shop = {
       name: "of loss - April Assman",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/of-loss-unisex-black.jpeg"),
+      image: require("../assets/products/of-loss-unisex-black.png"),
     },
     {
       index: 17,
@@ -202,7 +202,7 @@ export const Shop: Shop = {
       name: "of loss - April Assman",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/of-loss-women-black.jpeg"),
+      image: require("../assets/products/of-loss-women-black.png"),
     },
     {
       index: 18,
@@ -211,7 +211,7 @@ export const Shop: Shop = {
       name: "of loss - April Assman",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/of-loss-unisex-white.jpeg"),
+      image: require("../assets/products/of-loss-unisex-white.png"),
     },
     {
       index: 19,
@@ -220,7 +220,7 @@ export const Shop: Shop = {
       name: "of loss - April Assman",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/of-loss-women-white.jpeg"),
+      image: require("../assets/products/of-loss-women-white.png"),
     },
     {
       index: 20,
@@ -229,7 +229,7 @@ export const Shop: Shop = {
       name: "Perseus - April Assman",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/perseus-unisex-black.jpeg"),
+      image: require("../assets/products/perseus-unisex-black.png"),
     },
     {
       index: 21,
@@ -238,7 +238,7 @@ export const Shop: Shop = {
       name: "Perseus - April Assman",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/perseus-women-black.jpeg"),
+      image: require("../assets/products/perseus-women-black.png"),
     },
     {
       index: 22,
@@ -247,7 +247,7 @@ export const Shop: Shop = {
       name: "Perseus - April Assman",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/perseus-unisex-white.jpeg"),
+      image: require("../assets/products/perseus-unisex-white.png"),
     },
     {
       index: 23,
@@ -256,7 +256,7 @@ export const Shop: Shop = {
       name: "Perseus - April Assman",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/perseus-women-white.jpeg"),
+      image: require("../assets/products/perseus-women-white.png"),
     },
     {
       index: 24,
@@ -265,7 +265,7 @@ export const Shop: Shop = {
       name: "Pseudopop in Teal - Emma Wood",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/pseudopop-in-teal-unisex-black.jpeg"),
+      image: require("../assets/products/pseudopop-in-teal-unisex-black.png"),
     },
     {
       index: 25,
@@ -274,7 +274,7 @@ export const Shop: Shop = {
       name: "Pseudopop in Teal - Emma Wood",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/pseudopop-in-teal-women-black.jpeg"),
+      image: require("../assets/products/pseudopop-in-teal-women-black.png"),
     },
     {
       index: 26,
@@ -283,7 +283,7 @@ export const Shop: Shop = {
       name: "Pseudopop in Teal - Emma Wood",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/pseudopop-in-teal-unisex-white.jpeg"),
+      image: require("../assets/products/pseudopop-in-teal-unisex-white.png"),
     },
     {
       index: 27,
@@ -292,7 +292,7 @@ export const Shop: Shop = {
       name: "Pseudopop in Teal - Emma Wood",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/pseudopop-in-teal-women-white.jpeg"),
+      image: require("../assets/products/pseudopop-in-teal-women-white.png"),
     },
     {
       index: 28,
@@ -301,7 +301,7 @@ export const Shop: Shop = {
       name: "See How Low the Moon Hangs - Emma Wood",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/see-how-low-the-moon-hangs-unisex-black.jpeg"),
+      image: require("../assets/products/see-how-low-the-moon-hangs-unisex-black.png"),
     },
     {
       index: 29,
@@ -310,7 +310,7 @@ export const Shop: Shop = {
       name: "See How Low the Moon Hangs - Emma Wood",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/see-how-low-the-moon-hangs-women-black.jpeg"),
+      image: require("../assets/products/see-how-low-the-moon-hangs-women-black.png"),
     },
     {
       index: 30,
@@ -319,7 +319,7 @@ export const Shop: Shop = {
       name: "See How Low the Moon Hangs - Emma Wood",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/see-how-low-the-moon-hangs-unisex-white.jpeg"),
+      image: require("../assets/products/see-how-low-the-moon-hangs-unisex-white.png"),
     },
     {
       index: 31,
@@ -328,7 +328,7 @@ export const Shop: Shop = {
       name: "See How Low the Moon Hangs - Emma Wood",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/see-how-low-the-moon-hangs-women-white.jpeg"),
+      image: require("../assets/products/see-how-low-the-moon-hangs-women-white.png"),
     },
     {
       index: 32,
@@ -337,7 +337,7 @@ export const Shop: Shop = {
       name: "Ward Lock - April Assman",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/ward-lock-unisex-black.jpeg"),
+      image: require("../assets/products/ward-lock-unisex-black.png"),
     },
     {
       index: 33,
@@ -346,7 +346,7 @@ export const Shop: Shop = {
       name: "Ward Lock - April Assman",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/ward-lock-women-black.jpeg"),
+      image: require("../assets/products/ward-lock-women-black.png"),
     },
     {
       index: 34,
@@ -355,7 +355,7 @@ export const Shop: Shop = {
       name: "Ward Lock - April Assman",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/ward-lock-unisex-white.jpeg"),
+      image: require("../assets/products/ward-lock-unisex-white.png"),
     },
     {
       index: 35,
@@ -364,7 +364,7 @@ export const Shop: Shop = {
       name: "Ward Lock - April Assman",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/ward-lock-women-white.jpeg"),
+      image: require("../assets/products/ward-lock-women-white.png"),
     },
     {
       index: 36,
@@ -373,7 +373,7 @@ export const Shop: Shop = {
       name: "what counts as silence - Emma Wood",
       format: "Black Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/what-counts-as-silence-unisex-black.jpeg"),
+      image: require("../assets/products/what-counts-as-silence-unisex-black.png"),
     },
     {
       index: 37,
@@ -382,7 +382,7 @@ export const Shop: Shop = {
       name: "what counts as silence - Emma Wood",
       format: "Black Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/what-counts-as-silence-women-black.jpeg"),
+      image: require("../assets/products/what-counts-as-silence-women-black.png"),
     },
     {
       index: 38,
@@ -391,7 +391,7 @@ export const Shop: Shop = {
       name: "what counts as silence - Emma Wood",
       format: "White Border - Unisex T-Shirt",
       price: 35,
-      image: require("../assets/products/what-counts-as-silence-unisex-white.jpeg"),
+      image: require("../assets/products/what-counts-as-silence-unisex-white.png"),
     },
     {
       index: 39,
@@ -400,7 +400,7 @@ export const Shop: Shop = {
       name: "what counts as silence - Emma Wood",
       format: "White Border - Women's T-Shirt",
       price: 35,
-      image: require("../assets/products/what-counts-as-silence-women-white.jpeg"),
+      image: require("../assets/products/what-counts-as-silence-women-white.png"),
     },
   ],
 };
