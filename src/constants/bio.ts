@@ -1,4 +1,12 @@
-export const Bio = {
+type Bio = {
+  image: NodeRequire;
+  paragraphs: {
+    index: number;
+    text: string;
+  }[];
+};
+
+export const Bio: Bio = {
   image: require("../assets/bio/spencer-krips-bio.png"),
   paragraphs: [
     {

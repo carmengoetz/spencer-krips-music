@@ -1,4 +1,14 @@
-export const Press = {
+type Article = {
+  index: number;
+  title: string;
+  date: string;
+  publication: string;
+  description: string;
+  image: NodeRequire;
+  link: string;
+};
+
+export const Press: { articles: Article[] } = {
   articles: [
     {
       index: 0,

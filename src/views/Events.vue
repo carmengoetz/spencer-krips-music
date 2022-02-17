@@ -87,6 +87,12 @@ export default Vue.extend({
     }
   }
 
+  &__hr {
+    height: 4px;
+    background-color: #015869;
+    border: none;
+  }
+
   &__slide-enter {
     opacity: 0;
     transform: scale(0.5);

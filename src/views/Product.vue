@@ -22,10 +22,10 @@ declare const ShopifyBuy: any;
 export default Vue.extend({
   name: "Product",
   methods: {
-    id() {
+    id(): string {
       return this.$route.params.id;
     },
-    breadcrumbs() {
+    breadcrumbs(): { text: string; disabled: boolean; href: string }[] {
       const id = this.$route.params.id;
       const product = Shop.products.find((prod) => prod.id.toString() == id);
 

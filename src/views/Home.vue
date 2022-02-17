@@ -17,7 +17,13 @@
           ></v-img>
         </v-col>
       </v-row>
-      <v-row no-gutters align="center" justify="center" class="home__feature" key="1">
+      <v-row
+        no-gutters
+        align="center"
+        justify="center"
+        class="home__feature"
+        key="1"
+      >
         <v-col lg="11" class="pa-0">
           <v-img
             :src="Home.featureImage"

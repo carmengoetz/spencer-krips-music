@@ -1,24 +1,23 @@
 <template>
-  <v-row no-gutters class="categories mt-3 mt-md-1 pt-md-8 pb-md-5 px-md-16">
-    <v-col
+  <v-row
+    no-gutters
+    justify="center"
+    class="categories mt-3 mt-md-0 pt-md-3 pb-md-0 px-md-16"
+  >
+    <router-link
       v-for="category in Shop.categories"
       :key="category.id"
-      align="center"
-      class="d-none d-md-inline mx-auto"
+      class="categories__link categories__link--web d-none d-md-inline py-5 px-13 px-lg-16"
+      :class="active == category.id ? 'categories__active' : ''"
+      :to="{
+        name: 'Category',
+        params: {
+          id: category.id,
+        },
+      }"
     >
-      <router-link
-        class="categories__link categories__link--web"
-        :class="active == category.id ? 'categories__active' : ''"
-        :to="{
-          name: 'Category',
-          params: {
-            id: category.id,
-          },
-        }"
-      >
-        {{ category.title }}
-      </router-link>
-    </v-col>
+      {{ category.title }}
+    </router-link>
     <v-menu tile max-width="960" class="d-inline d-md-none">
       <template v-slot:activator="{ on, attrs }">
         <v-row
@@ -63,7 +62,7 @@ import { Shop } from "@/constants";
 
 export default Vue.extend({
   name: "CategoryNav",
-  props: ["active"],
+  props: { active: String },
   data: () => ({
     Shop,
   }),
@@ -84,13 +83,8 @@ export default Vue.extend({
     }
 
     &--web {
-      max-width: 220px;
-      width: 100%;
-      padding: 22px 68px !important;
-      margin: 0;
       @media (max-width: 1264px) {
         font: normal normal normal 16px raleway, sans-serif;
-        padding: 25px 48px 23px 48px !important;
       }
     }
 

@@ -2,7 +2,8 @@
   <a :href="link" target="_blank" class="event pa-6">
     <v-row align="center" no-gutters>
       <v-col cols="12" md="3">
-        <v-img :src="image" :alt="title" width="200" class="event__image mx-auto" ><template v-slot:placeholder>
+        <v-img :src="image" :alt="title" width="200" class="event__image mx-auto"
+          ><template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
                 indeterminate
@@ -29,7 +30,16 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Event",
-  props: ["link", "image", "title", "displayDate", "who", "where", "what", "description"],
+  props: {
+    link: String,
+    image: String,
+    title: String,
+    displayDate: String,
+    who: String,
+    where: String,
+    what: String,
+    description: String,
+  },
 });
 </script>
 

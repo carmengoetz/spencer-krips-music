@@ -1,4 +1,17 @@
-export const Events = {
+type Event = {
+  index: number;
+  title: string;
+  who: string;
+  date: string;
+  displayDate: string;
+  where: string;
+  what: string;
+  description: string;
+  image: NodeRequire;
+  link: string;
+};
+
+export const Events: { events: Event[] } = {
   events: [
     {
       index: 0,

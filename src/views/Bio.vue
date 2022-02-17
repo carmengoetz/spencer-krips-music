@@ -13,7 +13,12 @@
         ></v-img>
       </v-col>
       <v-col cols="12" md="6" class="bio__description">
-        <v-card flat tile color="transparent" class="bio__description--paragraphs">
+        <v-card
+          flat
+          tile
+          color="transparent"
+          class="bio__description--paragraphs"
+        >
           <v-card-text
             v-for="paragraph in Bio.paragraphs"
             :key="paragraph.index"

@@ -26,7 +26,14 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Article",
-  props: ["link", "image", "title", "publication", "date", "description"],
+  props: {
+    link: String,
+    image: String,
+    title: String,
+    publication: String,
+    date: String,
+    description: String,
+  },
 });
 </script>
 

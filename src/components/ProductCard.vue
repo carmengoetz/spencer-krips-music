@@ -28,7 +28,13 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "ProductCard",
-  props: ["id", "image", "name", "format", "price"],
+  props: {
+    id: Number,
+    image: String,
+    name: String,
+    format: String,
+    price: Number,
+  },
 });
 </script>
 

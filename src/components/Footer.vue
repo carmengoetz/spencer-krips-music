@@ -22,7 +22,7 @@
         <v-row justify="center" justify-sm="end">
           <v-card flat tile color="transparent">
             <v-btn
-              v-for="item in socials"
+              v-for="item in Footer.socials"
               :key="item.icon"
               icon
               class="footer__social-image mx-2 pa-5"
@@ -54,32 +54,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { Footer } from "@/constants";
 
 export default Vue.extend({
   name: "Footer",
   data: () => ({
-    socials: [
-      {
-        icon: "mdi-facebook",
-        link: "https://www.facebook.com/spencerkripsmusic/",
-      },
-      {
-        icon: "mdi-youtube",
-        link: "https://www.youtube.com/channel/UClgDTnOa6oAs5Ag5EfFrBow",
-      },
-      {
-        icon: "mdi-spotify",
-        link: "https://open.spotify.com/artist/4WVx02nMAgd6jvUprPffuZ",
-      },
-      {
-        image: require("../assets/icons/apple-music.png"),
-        link: "https://music.apple.com/us/artist/spencer-krips/1586246238",
-      },
-      {
-        icon: "mdi-soundcloud",
-        link: "https://soundcloud.com/spencerkripsmusic",
-      },
-    ],
+    Footer,
   }),
 });
 </script>
