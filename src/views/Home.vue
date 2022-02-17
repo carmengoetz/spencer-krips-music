@@ -57,11 +57,13 @@
             rel="noreferrer"
             width="60"
           >
-            <v-img
-              src="../assets/icons/spotify.svg"
+            <v-icon
+              size="76"
+              color="white"
               class="home__feature--badge home__feature--spotify"
-              width="60"
-            />
+            >
+              mdi-spotify
+            </v-icon>
           </v-btn>
           <v-btn
             icon
@@ -81,7 +83,7 @@
           </v-btn>
           <v-btn
             icon
-            class="mt-4 mb-5 mx-4 mx-lg-0"
+            class="my-5 mx-4 mx-lg-0"
             elevation="0"
             href="https://music.youtube.com/playlist?list=OLAK5uy_nbOlukt1KkNLEkGYfqNTFqyS1gQYITwiY"
             alt="Play on YouTube Music"
@@ -89,12 +91,13 @@
             rel="noreferrer"
             width="60"
           >
-            <v-img
-              src="../assets/icons/youtube.svg"
+            <v-icon
+              size="76"
+              color="white"
               class="home__feature--badge home__feature--youtube"
-              width="60"
-              height="40"
-            />
+            >
+              mdi-youtube
+            </v-icon>
           </v-btn>
         </v-col>
       </v-row>
@@ -173,6 +176,8 @@ export default Vue.extend({
 
     &--spotify {
       &:hover {
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
       }
     }
@@ -185,6 +190,8 @@ export default Vue.extend({
 
     &--youtube {
       &:hover {
+        width: 60px;
+        height: 20px;
         border-radius: 20%;
       }
     }

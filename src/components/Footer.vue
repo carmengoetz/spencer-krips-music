@@ -34,7 +34,16 @@
               width="28"
               height="28"
             >
-              <v-img :src="item.icon" :alt="item.icon" width="28" height="28" />
+              <v-icon v-if="item.icon" size="32" color="white">
+                {{ item.icon }}
+              </v-icon>
+              <v-img
+                v-else-if="item.image"
+                :src="item.image"
+                :alt="item.image"
+                width="28"
+                height="28"
+              />
             </v-btn>
           </v-card>
         </v-row>
@@ -51,23 +60,23 @@ export default Vue.extend({
   data: () => ({
     socials: [
       {
-        icon: require("../assets/icons/facebook.svg"),
+        icon: "mdi-facebook",
         link: "https://www.facebook.com/spencerkripsmusic/",
       },
       {
-        icon: require("../assets/icons/youtube.svg"),
+        icon: "mdi-youtube",
         link: "https://www.youtube.com/channel/UClgDTnOa6oAs5Ag5EfFrBow",
       },
       {
-        icon: require("../assets/icons/spotify.svg"),
+        icon: "mdi-spotify",
         link: "https://open.spotify.com/artist/4WVx02nMAgd6jvUprPffuZ",
       },
       {
-        icon: require("../assets/icons/apple-music.png"),
+        image: require("../assets/icons/apple-music.png"),
         link: "https://music.apple.com/us/artist/spencer-krips/1586246238",
       },
       {
-        icon: require("../assets/icons/soundcloud.svg"),
+        icon: "mdi-soundcloud",
         link: "https://soundcloud.com/spencerkripsmusic",
       },
     ],
