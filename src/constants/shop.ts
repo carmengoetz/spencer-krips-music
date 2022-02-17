@@ -8,6 +8,7 @@ type Product = {
   id: number;
   categories: number[];
   name: string;
+  format: string;
   price: number;
   image: NodeRequire;
 };
@@ -24,12 +25,8 @@ export const Shop: Shop = {
       title: "All Music",
     },
     {
-      id: 391403077880,
-      title: "Brass Band",
-    },
-    {
-      id: 391403143416,
-      title: "Concert Band",
+      id: 391509016824,
+      title: "Instrumental",
     },
     {
       id: 391403110648,
@@ -49,31 +46,35 @@ export const Shop: Shop = {
       index: 0,
       id: 7584649216248,
       categories: [391403045112, 391403176184],
-      name: "behold, the sonic universe - CD",
+      name: "behold, the sonic universe",
+      format: "CD",
       price: 15,
       image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
       index: 1,
       id: 7584640827640,
-      categories: [391403045112],
+      categories: [391403045112, 391509016824],
       name: "behold, the sonic universe",
+      format: "Marimba & Vibraphone",
       price: 45,
       image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
       index: 2,
       id: 7584636502264,
-      categories: [391403045112, 391403077880, 391403143416],
+      categories: [391403045112, 391509016824],
       name: "Jenny",
+      format: "Adaptable / Brass / Concert Band",
       price: 75,
       image: require("../assets/products/jenny.png"),
     },
     {
       index: 3,
       id: 7584641220856,
-      categories: [391403045112],
+      categories: [391403045112, 391509016824],
       name: "Pseudopop in Teal",
+      format: "Trombone Quartet",
       price: 20,
       image: require("../assets/products/pseudopop-in-teal.png"),
     },
@@ -82,22 +83,25 @@ export const Shop: Shop = {
       id: 7584642760952,
       categories: [391403045112, 391403110648],
       name: "See How Low the Moon Hangs",
+      format: "SATB Divisi",
       price: 3,
       image: require("../assets/products/see-how-low-the-moon-hangs.png"),
     },
     {
       index: 5,
       id: 7584644366584,
-      categories: [391403045112, 391403077880, 391403143416],
+      categories: [391403045112, 391509016824],
       name: "to be whole",
+      format: "Brass / Concert Band",
       price: 100,
       image: require("../assets/products/to-be-whole.png"),
     },
     {
       index: 6,
       id: 7584646660344,
-      categories: [391403045112],
+      categories: [391403045112, 391509016824],
       name: "Ward Lock",
+      format: "Jazz Ensemble",
       price: 70,
       image: require("../assets/products/ward-lock.png"),
     },
@@ -106,6 +110,7 @@ export const Shop: Shop = {
       id: 7584648331512,
       categories: [391403045112, 391403110648],
       name: "what counts as silence",
+      format: "SATB Divisi",
       price: 3,
       image: require("../assets/products/what-counts-as-silence.png"),
     },

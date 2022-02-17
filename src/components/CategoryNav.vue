@@ -1,5 +1,5 @@
 <template>
-  <v-row no-gutters class="categories mt-4 mt-md-1 pt-md-8 pb-md-5 px-md-16">
+  <v-row no-gutters class="categories mt-3 mt-md-1 pt-md-8 pb-md-5 px-md-16">
     <v-col
       v-for="category in Shop.categories"
       :key="category.id"
@@ -19,14 +19,15 @@
         {{ category.title }}
       </router-link>
     </v-col>
-    <v-menu tile class="d-inline d-md-none my-8">
+    <v-menu tile bottom nudge-bottom="48" max-width="960" class="d-inline d-md-none">
       <template v-slot:activator="{ on, attrs }">
         <v-row
+          no-gutters
           v-bind="attrs"
           v-on="on"
           align="center"
           justify="center"
-          class="categories__link d-flex d-md-none"
+          class="categories__link d-flex d-md-none py-4"
           >Categories</v-row
         >
       </template>
@@ -38,7 +39,7 @@
             class="px-0"
           >
             <router-link
-              class="categories__link categories__link--mobile pa-4 text-center"
+              class="categories__link categories__link--mobile py-4 text-center"
               :class="active == category.id ? 'categories__active' : ''"
               :to="{
                 name: 'Category',
@@ -94,5 +95,10 @@ export default Vue.extend({
   &__active {
     background-color: #8a4d58 !important;
   }
+}
+
+.v-menu__content {
+  width: 100% !important;
+  box-shadow: none;
 }
 </style>

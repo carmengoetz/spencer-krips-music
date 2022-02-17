@@ -18,17 +18,17 @@
     ></v-img>
     <v-spacer></v-spacer>
     <div class="product__name mt-4 ml-4">{{ name }}</div>
+    <div class="product__format ml-4">{{ format }}</div>
     <div class="product__price ml-4">CA${{ price }}.00</div>
   </v-card>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import { Shop } from "@/constants";
 
 export default Vue.extend({
   name: "ProductCard",
-  props: ["id", "image", "name", "price"],
+  props: ["id", "image", "name", "format", "price"],
 });
 </script>
 
@@ -39,7 +39,8 @@ export default Vue.extend({
   }
 
   &__name,
-  &__price {
+  &__price,
+  &__format {
     color: white;
     font: normal normal normal 16px raleway, sans-serif;
     text-align: start !important;
@@ -47,6 +48,10 @@ export default Vue.extend({
     @media (max-width: 600px) {
       text-align: center !important;
     }
+  }
+
+  &__format {
+    font: italic normal normal 14px raleway, sans-serif;
   }
 }
 </style>

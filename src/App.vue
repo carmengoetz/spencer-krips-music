@@ -43,7 +43,7 @@ h6 {
 }
 
 ::selection {
-  background: blue;
+  background: #568e55;
   text-shadow: none;
 }
 

@@ -16,6 +16,7 @@
             :id="product.id"
             :image="product.image"
             :name="product.name"
+            :format="product.format"
             :price="product.price"
             :key="product.index"
           />
