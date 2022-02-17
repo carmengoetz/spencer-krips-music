@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="product d-flex flex-column pa-4"
+    class="product d-flex flex-column px-4 py-6"
     height="350"
     elevation="0"
     color="transparent"

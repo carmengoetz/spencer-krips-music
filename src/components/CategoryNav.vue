@@ -4,10 +4,10 @@
       v-for="category in Shop.categories"
       :key="category.id"
       align="center"
-      class="d-none d-md-inline"
+      class="d-none d-md-inline mx-auto"
     >
       <router-link
-        class="categories__link px-6 py-6"
+        class="categories__link categories__link--web"
         :class="active == category.id ? 'categories__active' : ''"
         :to="{
           name: 'Category',
@@ -19,7 +19,7 @@
         {{ category.title }}
       </router-link>
     </v-col>
-    <v-menu tile bottom nudge-bottom="48" max-width="960" class="d-inline d-md-none">
+    <v-menu tile max-width="960" class="d-inline d-md-none">
       <template v-slot:activator="{ on, attrs }">
         <v-row
           no-gutters
@@ -83,8 +83,15 @@ export default Vue.extend({
       background-color: #8a4d58 !important;
     }
 
-    @media (max-width: 1264px) {
-      font: normal normal normal 16px raleway, sans-serif;
+    &--web {
+      max-width: 220px;
+      width: 100%;
+      padding: 22px 68px !important;
+      margin: 0;
+      @media (max-width: 1264px) {
+        font: normal normal normal 16px raleway, sans-serif;
+        padding: 25px 48px 23px 48px !important;
+      }
     }
 
     &--mobile {
@@ -100,5 +107,6 @@ export default Vue.extend({
 .v-menu__content {
   width: 100% !important;
   box-shadow: none;
+  top: 130px !important;
 }
 </style>

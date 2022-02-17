@@ -3,7 +3,7 @@
     <transition-group appear name="category__fade">
       <CategoryNav :active="$route.params.id" key="0" />
     </transition-group>
-    <v-row no-gutters class="category mt-8">
+    <v-row no-gutters class="category mt-0 mt-md-8">
       <v-col
         cols="12"
         sm="6"

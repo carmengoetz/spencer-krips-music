@@ -3,7 +3,7 @@
     <transition-group appear name="shop__fade">
       <CategoryNav key="0" />
     </transition-group>
-    <v-row no-gutters class="shop mt-4 mt-md-8">
+    <v-row no-gutters class="shop mt-0 mt-md-8">
       <v-col
         cols="12"
         sm="6"

@@ -72,8 +72,8 @@ export default Vue.extend({
     }
     function ShopifyBuyInit() {
       var client = ShopifyBuy.buildClient({
-        domain: "spencer-krips-music-1.myshopify.com",
-        storefrontAccessToken: "874bdd65c1b5ae084b12a4d805fd12cf",
+        domain: process.env.VUE_APP_SHOPIFY_DOMAIN,
+        storefrontAccessToken: process.env.VUE_APP_SHOPIFY_STOREFRONT_TOKEN,
       });
       ShopifyBuy.UI.onReady(client).then(function (ui: any) {
         const node = document.getElementById("product-component-1644890831058");

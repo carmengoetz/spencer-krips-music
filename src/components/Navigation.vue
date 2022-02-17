@@ -23,11 +23,7 @@
         {{ page.name }}
       </router-link>
     </div>
-    <v-menu
-      nudge-bottom="40"
-      max-width="960"
-      class="nav__mobile d-inline d-md-none mt-16"
-    >
+    <v-menu tile max-width="960" class="nav__mobile d-inline d-md-none mt-16">
       <template v-slot:activator="{ on, attrs }">
         <div v-bind="attrs" v-on="on" class="nav__menu d-inline d-md-none">
           <span class="nav__menu--line"></span>
@@ -97,10 +93,10 @@ export default Vue.extend({
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    border: solid 2px transparent;
 
     &:hover {
       border-bottom: solid 2px #568e55;
-      border-top: solid 2px transparent;
     }
 
     &--mobile {
@@ -118,14 +114,11 @@ export default Vue.extend({
       display: block;
     }
   }
-
-  &__mobile {
-    width: 100% !important;
-  }
 }
 
 .v-menu__content {
   width: 100% !important;
   box-shadow: none;
+  top: 78px !important;
 }
 </style>
