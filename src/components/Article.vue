@@ -43,7 +43,10 @@ export default Vue.extend({
   text-decoration: none;
 
   &:hover {
-    background-color: #015869;
+    box-shadow: 6px 6px 0 #674046 !important;
+    background-color: #015869 !important;
+    transform: translate(-3px, -3px);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
   }
 
   &__title {

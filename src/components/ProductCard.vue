@@ -1,9 +1,9 @@
 <template>
   <v-card
-    class="product d-flex flex-column px-4 py-6"
+    class="product d-flex flex-column px-4 py-6 ma-4"
     height="372"
     elevation="0"
-    color="transparent"
+    color="#1b4452"
     tile
     :to="{
       name: 'Product',
@@ -17,11 +17,9 @@
         </v-row> </template
     ></v-img>
     <v-spacer></v-spacer>
-    <div class="product__desc mb-4 mx-2">
-      <div class="product__name mt-4 ml-4">{{ name }}</div>
-      <div class="product__format ml-4">{{ format }}</div>
-      <div class="product__price pb-4 ml-4">CA${{ price }}.00</div>
-    </div>
+    <div class="product__name mt-4 ml-4">{{ name }}</div>
+    <div class="product__format ml-4">{{ format }}</div>
+    <div class="product__price pb-4 ml-4">CA${{ price }}.00</div>
   </v-card>
 </template>
 
@@ -43,16 +41,12 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .product {
   &:hover {
+    box-shadow: 6px 6px 0 #674046 !important;
     background-color: #015869 !important;
+    transform: translate(-3px, -3px);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
   }
 
-  &__desc {
-    background-color: #015869;
-
-    @media (max-width: 1240px) {
-      background-color: transparent;
-    }
-  }
   &__name,
   &__price,
   &__format {
