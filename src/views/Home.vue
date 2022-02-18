@@ -21,91 +21,99 @@
         no-gutters
         align="center"
         justify="center"
-        class="home__feature"
+        class="home__feature pa-0"
         key="1"
       >
-        <v-col lg="11" class="pa-0">
-          <v-img
-            :src="Home.featureImage"
-            class="home__feature--image text-center"
-            max-width="1144"
-            ><template v-slot:placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row> </template
-          ></v-img>
-        </v-col>
-        <v-col lg="1" class="home__feature--badges text-center px-lg-5 py-lg-2">
-          <v-btn
-            elevation="0"
-            class="home__feature--buy my-5 mx-4 mx-lg-0"
-            :to="{
-              name: 'Product',
-              params: { id: 7584649216248 },
-            }"
-            target="_blank"
-            rel="noreferrer"
-            width="56"
-            height="52"
+        <v-img
+          src="@/assets/behold-the-sonic-universe.png"
+          max-width="1240"
+          class="align-end home__feature--image"
+        >
+          <v-row
+            no-gutters
+            justify="center"
+            align="end"
+            class="my-0 my-sm-6 my-md-10 my-lg-16"
           >
-            Buy
-          </v-btn>
-          <v-btn
-            icon
-            class="my-5 mx-4 mx-lg-0"
-            elevation="0"
-            href="https://open.spotify.com/album/7sS7mbQzasGlm9QSqpHxOt"
-            alt="Play on Spotify"
-            target="_blank"
-            rel="noreferrer"
-            width="60"
-          >
-            <v-icon
-              size="76"
-              color="white"
-              class="home__feature--badge home__feature--spotify"
-            >
-              mdi-spotify
-            </v-icon>
-          </v-btn>
-          <v-btn
-            icon
-            class="mt-7 mb-6 mx-4 mx-lg-0"
-            elevation="0"
-            href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
-            alt="Play on Apple Music"
-            target="_blank"
-            rel="noreferrer"
-            width="56"
-          >
-            <v-img
-              src="../assets/icons/apple-music.png"
-              class="home__feature--badge home__feature--apple-music"
-              width="56"
-            />
-          </v-btn>
-          <v-btn
-            icon
-            class="my-5 mx-4 mx-lg-0"
-            elevation="0"
-            href="https://music.youtube.com/playlist?list=OLAK5uy_nbOlukt1KkNLEkGYfqNTFqyS1gQYITwiY"
-            alt="Play on YouTube Music"
-            target="_blank"
-            rel="noreferrer"
-            width="60"
-          >
-            <v-icon
-              size="76"
-              color="white"
-              class="home__feature--badge home__feature--youtube"
-            >
-              mdi-youtube
-            </v-icon>
-          </v-btn>
-        </v-col>
+            <v-dialog tile v-model="dialog" width="500">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  v-bind="attrs"
+                  v-on="on"
+                  tile
+                  color="#8a4d58"
+                  class="home__feature--button"
+                  >Listen Now</v-btn
+                >
+              </template>
+
+              <v-card tile color="#015869">
+                <v-card-actions>
+                  <v-card-title class="home__modal--title text-h5">
+                    Listen to behold, the sonic universe
+                  </v-card-title>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="dialog = false" class="footer__dialog--close">
+                    <v-icon color="white">mdi-close</v-icon>
+                  </v-btn>
+                </v-card-actions>
+
+                <v-card-text>
+                  <v-btn
+                    tile
+                    color="#8a4d58"
+                    elevation="0"
+                    class="home__modal--button my-4"
+                    :to="{
+                      name: 'Product',
+                      params: { id: 7584649216248 },
+                    }"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Buy Now</v-btn
+                  >
+                  <v-btn
+                    tile
+                    color="#8a4d58"
+                    class="home__modal--button my-4"
+                    elevation="0"
+                    href="https://open.spotify.com/album/7sS7mbQzasGlm9QSqpHxOt"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><v-icon size="30" color="white" class="mr-2"> mdi-spotify </v-icon>
+                    Listen on Spotify</v-btn
+                  >
+                  <v-btn
+                    tile
+                    color="#8a4d58"
+                    class="home__modal--button my-4"
+                    elevation="0"
+                    href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><v-img
+                      src="../assets/icons/apple-music.png"
+                      max-width="24"
+                      class="mr-4"
+                    />
+                    Listen on Apple Music</v-btn
+                  >
+                  <v-btn
+                    tile
+                    color="#8a4d58"
+                    class="home__modal--button my-4"
+                    elevation="0"
+                    href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><v-icon size="30" color="white" class="mr-2"> mdi-youtube </v-icon>
+                    Listen on Youtube Music</v-btn
+                  >
+                </v-card-text>
+              </v-card>
+            </v-dialog>
+          </v-row></v-img
+        >
       </v-row>
     </transition-group>
   </div>
@@ -120,6 +128,7 @@ export default Vue.extend({
 
   components: {},
   data: () => ({
+    dialog: false,
     Home,
   }),
 });
@@ -157,49 +166,34 @@ export default Vue.extend({
   }
 
   &__feature {
-    &--buy {
-      color: #015869;
-      font: normal normal bold 24px raleway, sans-serif;
-      margin: 8px;
+    &--image {
+      width: 100%;
+    }
+
+    &--button {
+      font: normal normal normal 16px, sans-serif;
+      color: white;
+      height: 48px !important;
+      width: 500px;
       text-transform: unset !important;
-      letter-spacing: -1px;
-      border-radius: 25%;
 
-      &:hover {
-        color: #8a4d58;
+      @media (max-width: 600px) {
+        height: 40px !important;
+        width: 100%;
       }
     }
+  }
 
-    &--badges {
-      background-color: #015869;
+  &__modal {
+    &--title {
+      font: normal normal normal 16px, sans-serif;
+      color: white;
     }
 
-    &--badge {
-      &:hover {
-        background-color: #8a4d58;
-      }
-    }
-
-    &--spotify {
-      &:hover {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-      }
-    }
-
-    &--apple-music {
-      &:hover {
-        border-radius: 20%;
-      }
-    }
-
-    &--youtube {
-      &:hover {
-        width: 60px;
-        height: 20px;
-        border-radius: 20%;
-      }
+    &--button {
+      width: 100%;
+      color: white;
+      text-transform: unset !important;
     }
   }
 
