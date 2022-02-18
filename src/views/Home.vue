@@ -25,7 +25,7 @@
         key="1"
       >
         <v-img
-          src="@/assets/behold-the-sonic-universe.png"
+          :src="Home.featureImage"
           max-width="1240"
           class="align-end home__feature--image"
         >
