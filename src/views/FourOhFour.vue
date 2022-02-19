@@ -1,7 +1,10 @@
 <template>
   <div class="four-oh-four mt-10 mt-md-16">
-    <v-row no-gutters align="center" justify="center">
-      <v-img :src="logo" alt="Spencer Krips Music" class="four-oh-four__image"
+    <v-row no-gutters justify="center">
+      <h1 class="four-oh-four__header mb-4">404: Not Found</h1>
+    </v-row>
+    <v-row no-gutters align="center" justify="center" class="mx-4">
+      <v-img :src="logo" alt="Spencer Krips Music" class="four-oh-four__image mx-4"
         ><template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular
@@ -16,7 +19,6 @@
         tile
         large
         color="#8a4d58"
-        dark
         :to="{
           name: 'Home',
         }"
@@ -46,6 +48,15 @@ export default Vue.extend({
   padding: 0;
   margin: 0 auto;
 
+  &__header {
+    color: white;
+    font: normal normal normal 60px raleway, sans-serif;
+
+    @media (max-width: 600px) {
+      font: normal normal normal 40px raleway, sans-serif;
+    }
+  }
+
   &__image {
     max-width: 600px !important;
 
@@ -55,14 +66,13 @@ export default Vue.extend({
   }
 
   &__button {
-    border: 2px solid #8a4d58 !important;
+    font: normal normal normal 16px, sans-serif;
     color: white;
-    font-size: 16px;
+    width: 500px;
+    text-transform: unset !important;
 
-    &::placeholder {
-      color: white;
-      font-size: 16px;
-      font-family: "Roboto", serif;
+    @media (max-width: 600px) {
+      width: 100%;
     }
   }
 }

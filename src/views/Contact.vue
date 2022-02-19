@@ -161,11 +161,12 @@ export default Vue.extend({
     &--button {
       width: 600px;
       height: 50px;
-      text-transform: uppercase;
       cursor: pointer;
       background-color: #8a4d58;
+      font: normal normal normal 16px, sans-serif;
 
-      &:active {
+      &:active,
+      &:hover {
         background: #8a4d58 radial-gradient(circle, transparent 40%, #a86b76 1%)
           center/15000%;
       }

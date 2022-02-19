@@ -61,9 +61,10 @@
                 <v-card-text>
                   <v-btn
                     tile
+                    large
                     color="#8a4d58"
                     elevation="0"
-                    class="home__modal--button my-4"
+                    class="home__modal--button my-2"
                     :to="{
                       name: 'Product',
                       params: { id: 7584649216248 },
@@ -74,8 +75,9 @@
                   >
                   <v-btn
                     tile
+                    large
                     color="#8a4d58"
-                    class="home__modal--button my-4"
+                    class="home__modal--button my-2"
                     elevation="0"
                     href="https://open.spotify.com/album/7sS7mbQzasGlm9QSqpHxOt"
                     target="_blank"
@@ -85,8 +87,9 @@
                   >
                   <v-btn
                     tile
+                    large
                     color="#8a4d58"
-                    class="home__modal--button my-4"
+                    class="home__modal--button my-2"
                     elevation="0"
                     href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
                     target="_blank"
@@ -100,8 +103,9 @@
                   >
                   <v-btn
                     tile
+                    large
                     color="#8a4d58"
-                    class="home__modal--button my-4"
+                    class="home__modal--button my-2"
                     elevation="0"
                     href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
                     target="_blank"

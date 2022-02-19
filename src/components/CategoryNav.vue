@@ -27,7 +27,7 @@
           align="center"
           justify="center"
           class="categories__link d-flex d-md-none py-4"
-          >Categories</v-row
+          >{{ categoryTitle() }}</v-row
         >
       </template>
       <v-card tile class="d-inline d-md-none">
@@ -62,7 +62,13 @@ import { Shop } from "@/constants";
 
 export default Vue.extend({
   name: "CategoryNav",
-  props: { active: String },
+  props: { active: Number },
+  methods: {
+    categoryTitle(): string {
+      const activeCategory = Shop.categories.find((cat) => cat.id === this.active);
+      return activeCategory?.title ?? "Categories";
+    },
+  },
   data: () => ({
     Shop,
   }),
