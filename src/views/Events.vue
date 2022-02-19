@@ -15,7 +15,7 @@
           :link="item.link"
           :image="item.image"
           :title="item.title"
-          :displayDate="item.displayDate"
+          :date="item.date"
           :who="item.who"
           :where="item.where"
           :what="item.what"
@@ -33,7 +33,7 @@
           :link="item.link"
           :image="item.image"
           :title="item.title"
-          :displayDate="item.displayDate"
+          :date="item.date"
           :who="item.who"
           :where="item.where"
           :what="item.what"
@@ -55,11 +55,11 @@ export default Vue.extend({
   components: { Event },
   data: () => {
     const pastEvents = Events.events
-      .filter((e) => new Date(e.date) < new Date())
-      .sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
+      .filter((e) => e.date < new Date())
+      .sort((a, b) => (a.date < b.date ? 1 : -1));
     const upcomingEvents = Events.events
-      .filter((e) => new Date(e.date) > new Date())
-      .sort((a, b) => (new Date(a.date) > new Date(b.date) ? 1 : -1));
+      .filter((e) => e.date === "TBD" || e.date > new Date())
+      .sort((a, b) => (a.date > b.date || b.date !== "TBD" ? 1 : -1));
 
     return {
       pastEvents,

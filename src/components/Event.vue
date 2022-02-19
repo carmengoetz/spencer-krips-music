@@ -15,7 +15,16 @@
       <v-col cols="12" md="9" align-self="start" class="event__text">
         <h3 class="event__title">{{ title }}</h3>
         <div class="event__date-who-where">
-          {{ displayDate }} | {{ who }} |
+          {{
+            date === "TBD"
+              ? date
+              : date.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })
+          }}
+          | {{ who }} |
           {{ where }}
         </div>
         <div class="event__what">{{ what }}</div>
@@ -34,7 +43,7 @@ export default Vue.extend({
     link: String,
     image: String,
     title: String,
-    displayDate: String,
+    date: [Date, String],
     who: String,
     where: String,
     what: String,

@@ -2,8 +2,7 @@ type Event = {
   index: number;
   title: string;
   who: string;
-  date: string;
-  displayDate: string;
+  date: Date | string;
   where: string;
   what: string;
   description: string;
@@ -17,8 +16,7 @@ export const Events: { events: Event[] } = {
       index: 0,
       title: "The Footnotes Big Band",
       who: "The Footnotes Jazz Collective",
-      date: "2021-09-21 23:59:59",
-      displayDate: "August 21, 2021",
+      date: new Date("2021-09-21T23:59:59"),
       where: "River Landing Ampitheater, Saskatoon",
       what: "Compositions & Performance",
       description:
@@ -30,8 +28,7 @@ export const Events: { events: Event[] } = {
       index: 1,
       title: "Hedwig and the Angry Inch",
       who: "Sparrow Theatre Company",
-      date: "2021-09-28 23:59:59",
-      displayDate: "August 27-28, 2021",
+      date: new Date("2021-09-28T23:59:59"),
       where: "Broadway Theatre, Saskatoon",
       what: "Music Director & Performance - Guitar, Piano, BG Vocals",
       description:
@@ -43,8 +40,7 @@ export const Events: { events: Event[] } = {
       index: 2,
       title: "Back in the Swing of Things!",
       who: "Saskatoon Jazz Orchestra",
-      date: "2021-11-13 23:59:59",
-      displayDate: "November 13, 2021",
+      date: new Date("2021-11-13T23:59:59"),
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - Bass Trombone",
       description:
@@ -56,8 +52,7 @@ export const Events: { events: Event[] } = {
       index: 3,
       title: "Folktales & Festivities",
       who: "Katrina MacKinnon & Terri-Lynn Mitchell",
-      date: "2021-12-05 23:59:59",
-      displayDate: "December 5, 2021",
+      date: new Date("2021-12-05T23:59:59"),
       where: "The Bassment, Saskatoon",
       what: "Composition",
       description:
@@ -69,8 +64,7 @@ export const Events: { events: Event[] } = {
       index: 4,
       title: "Make a Joyful Noise",
       who: "Saskatoon Jazz Orchestra",
-      date: "2021-12-11 23:59:59",
-      displayDate: "December 11, 2021",
+      date: new Date("2021-12-11T23:59:59"),
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - First Trombone",
       description:
@@ -82,8 +76,7 @@ export const Events: { events: Event[] } = {
       index: 5,
       title: "The Fab 4 and More: Beatles for Big Band",
       who: "Saskatoon Jazz Orchestra",
-      date: "2022-05-13 23:59:59",
-      displayDate: "May 13, 2022",
+      date: new Date("2022-05-13T23:59:59"),
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - Third Trombone",
       description:
@@ -95,8 +88,7 @@ export const Events: { events: Event[] } = {
       index: 6,
       title: "Dimensions in Sound",
       who: "Saskatoon Jazz Orchestra",
-      date: "2022-06-17 23:59:59",
-      displayDate: "June 17, 2022",
+      date: new Date("2022-06-17T23:59:59"),
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - First Trombone",
       description:
@@ -108,8 +100,7 @@ export const Events: { events: Event[] } = {
       index: 7,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
-      date: "2099-01-29 23:59:59",
-      displayDate: "TBD",
+      date: "TBD",
       where: "TCU Place, Saskatoon",
       what: "Performance - Bass Trombone",
       description:
