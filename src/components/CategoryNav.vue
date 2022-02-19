@@ -31,7 +31,7 @@
         >
       </template>
       <v-card tile class="d-inline d-md-none">
-        <v-list tile color="#015869" class="pt-0">
+        <v-list tile color="#015869" class="py-0">
           <v-list-item
             v-for="category in Shop.categories"
             :key="category.id"
@@ -65,7 +65,9 @@ export default Vue.extend({
   props: { active: Number },
   methods: {
     categoryTitle(): string {
-      const activeCategory = Shop.categories.find((cat) => cat.id === this.active);
+      const activeCategory = Shop.categories.find(
+        (cat) => cat.id === this.active
+      );
       return activeCategory?.title ?? "Categories";
     },
   },

@@ -53,7 +53,11 @@
                     Listen to behold, the sonic universe
                   </v-card-title>
                   <v-spacer></v-spacer>
-                  <v-btn icon @click="dialog = false" class="footer__dialog--close">
+                  <v-btn
+                    icon
+                    @click="dialog = false"
+                    class="footer__dialog--close"
+                  >
                     <v-icon color="white">mdi-close</v-icon>
                   </v-btn>
                 </v-card-actions>
@@ -82,7 +86,9 @@
                     href="https://open.spotify.com/album/7sS7mbQzasGlm9QSqpHxOt"
                     target="_blank"
                     rel="noreferrer"
-                    ><v-icon size="30" color="white" class="mr-2"> mdi-spotify </v-icon>
+                    ><v-icon size="30" color="white" class="mr-2">
+                      mdi-spotify
+                    </v-icon>
                     Listen on Spotify</v-btn
                   >
                   <v-btn
@@ -110,7 +116,9 @@
                     href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
                     target="_blank"
                     rel="noreferrer"
-                    ><v-icon size="30" color="white" class="mr-2"> mdi-youtube </v-icon>
+                    ><v-icon size="30" color="white" class="mr-2">
+                      mdi-youtube
+                    </v-icon>
                     Listen on Youtube Music</v-btn
                   >
                 </v-card-text>

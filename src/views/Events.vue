@@ -28,7 +28,12 @@
       <h1 class="events__heading mb-4 mb-md-6">Past Events</h1>
     </v-row>
     <transition-group appear name="events__slide">
-      <v-row no-gutters justify="center" v-for="item in pastEvents" :key="item.index">
+      <v-row
+        no-gutters
+        justify="center"
+        v-for="item in pastEvents"
+        :key="item.index"
+      >
         <Event
           :link="item.link"
           :image="item.image"

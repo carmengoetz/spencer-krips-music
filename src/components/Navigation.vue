@@ -1,5 +1,11 @@
 <template>
-  <v-app-bar absolute color="#8a4d58" flat height="78" class="nav px-0 px-lg-16">
+  <v-app-bar
+    absolute
+    color="#8a4d58"
+    flat
+    height="78"
+    class="nav px-0 px-lg-16"
+  >
     <router-link
       class="nav__logo"
       data-text="Spencer Krips Music"
@@ -25,15 +31,17 @@
     </div>
     <v-menu tile max-width="960" class="nav__mobile d-inline d-md-none mt-16">
       <template v-slot:activator="{ on, attrs }">
-        <div v-bind="attrs" v-on="on" class="nav__menu d-inline d-md-none">
-          <span class="nav__menu--line"></span>
-          <span class="nav__menu--line"></span>
-          <span class="nav__menu--line"></span>
-        </div>
+        <v-app-bar-nav-icon
+          v-bind="attrs"
+          v-on="on"
+          color="white"
+          large
+          class="hidden-lg-and-up"
+        ></v-app-bar-nav-icon>
       </template>
-      <v-card class="nav__links--mobile d-inline d-md-none">
-        <v-list tile color="#8a4d58" class="pt-0">
-          <v-list-item v-for="page in pages" :key="page.index">
+      <v-card class="nav__links--mobile d-inline d-md-none mx-0">
+        <v-list tile color="#8a4d58" class="py-0">
+          <v-list-item v-for="page in pages" :key="page.index" class="px-0">
             <router-link
               class="nav__link nav__link--mobile py-4 text-center px-16"
               :data-text="page.name"
@@ -101,17 +109,6 @@ export default Vue.extend({
 
     &--mobile {
       width: 100%;
-    }
-  }
-  &__menu {
-    cursor: pointer;
-
-    &--line {
-      background-color: ghostwhite;
-      width: 24px;
-      height: 2px;
-      margin: 3px 0;
-      display: block;
     }
   }
 }

@@ -4,7 +4,10 @@
       <h1 class="four-oh-four__header mb-4">404: Not Found</h1>
     </v-row>
     <v-row no-gutters align="center" justify="center" class="mx-4">
-      <v-img :src="logo" alt="Spencer Krips Music" class="four-oh-four__image mx-4"
+      <v-img
+        :src="logo"
+        alt="Spencer Krips Music"
+        class="four-oh-four__image mx-4"
         ><template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular

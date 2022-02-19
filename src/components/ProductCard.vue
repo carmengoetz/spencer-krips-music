@@ -13,7 +13,10 @@
     <v-img width="262" height="262" :src="image" class="align-self-center"
       ><template v-slot:placeholder>
         <v-row class="fill-height ma-0" align="center" justify="center">
-          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+          <v-progress-circular
+            indeterminate
+            color="grey lighten-5"
+          ></v-progress-circular>
         </v-row> </template
     ></v-img>
     <v-spacer></v-spacer>
@@ -45,7 +48,8 @@ export default Vue.extend({
     box-shadow: 6px 6px 0 #674046 !important;
     background-color: #015869 !important;
     transform: translate(-3px, -3px);
-    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease,
+      transform 0.5s ease;
   }
 
   &__name,

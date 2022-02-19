@@ -4,7 +4,11 @@
       <v-row no-gutters justify="center" key="0">
         <h1 class="contact__header">Contact Spencer Krips</h1>
       </v-row>
-      <form class="contact__form my-6 mx-auto" @submit.prevent="sendEmail" key="0">
+      <form
+        class="contact__form my-6 mx-auto"
+        @submit.prevent="sendEmail"
+        key="0"
+      >
         <v-row no-gutters class="mb-5">
           <input
             placeholder="Name *"
@@ -41,7 +45,9 @@
           />
         </v-row>
         <v-row no-gutters>
-          <button type="submit" class="contact__form--button">Send message</button>
+          <button type="submit" class="contact__form--button">
+            Send message
+          </button>
         </v-row>
       </form>
     </transition-group>

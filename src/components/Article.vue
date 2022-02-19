@@ -2,7 +2,11 @@
   <a :href="link" target="_blank" class="article pa-6">
     <v-row no-gutters algin="center">
       <v-col cols="12" md="3">
-        <v-img :src="image" :alt="title" width="200" class="article__image mx-auto mb-4"
+        <v-img
+          :src="image"
+          :alt="title"
+          width="200"
+          class="article__image mx-auto mb-4"
           ><template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
@@ -55,7 +59,8 @@ export default Vue.extend({
     box-shadow: 6px 6px 0 #674046 !important;
     background-color: #015869 !important;
     transform: translate(-3px, -3px);
-    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease,
+      transform 0.5s ease;
   }
 
   &__title {
