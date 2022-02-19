@@ -21,7 +21,7 @@ export const Events: { events: Event[] } = {
       what: "Compositions & Performance",
       description:
         "The Footnotes Jazz Collective presents: the Footnotes Big Band! Come down to the River Landing Amphitheater next to the spray park for some big band classics mixed in with brand new arrangements!",
-      image: require("../assets/events/the-footnotes-jazz-collective.jpeg"),
+      image: require("../assets/events/the-footnotes-jazz-collective.png"),
       link: "https://www.facebook.com/events/3224107931149997/",
     },
     {
@@ -33,7 +33,7 @@ export const Events: { events: Event[] } = {
       what: "Music Director & Performance - Guitar, Piano, BG Vocals",
       description:
         "Hedwig and the Angry Inch tells the story of “internationally ignored song stylist” Hedwig Schmidt, a fourth-wall smashing East German rock ‘n’ roll goddess who also happens to be the victim of a botched sex-change operation, which has left her with just “an angry inch”.",
-      image: require("../assets/events/hedwig-and-the-angry-inch.jpeg"),
+      image: require("../assets/events/hedwig-and-the-angry-inch.png"),
       link: "https://www.facebook.com/events/2983286145271417/",
     },
     {

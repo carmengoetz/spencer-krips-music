@@ -14,7 +14,16 @@
       </v-col>
       <v-col cols="12" md="9" class="article__text">
         <h3 class="article__title">{{ title }}</h3>
-        <div class="article__publication-date">{{ publication }} - {{ date }}</div>
+        <div class="article__publication-date">
+          {{ publication }} -
+          {{
+            date.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+          }}
+        </div>
         <p class="article__description">{{ description }}</p>
       </v-col>
     </v-row>
@@ -31,7 +40,7 @@ export default Vue.extend({
     image: String,
     title: String,
     publication: String,
-    date: String,
+    date: Date,
     description: String,
   },
 });
