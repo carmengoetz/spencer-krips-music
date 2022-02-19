@@ -19,7 +19,7 @@
     <v-spacer></v-spacer>
     <div class="product__name mt-4 ml-4">{{ name }}</div>
     <div class="product__format ml-4">{{ format }}</div>
-    <div class="product__price pb-4 ml-4">CA${{ price }}.00</div>
+    <div class="product__price pb-4 ml-4">{{ currency }} ${{ price }}.00</div>
   </v-card>
 </template>
 
@@ -33,6 +33,7 @@ export default Vue.extend({
     image: String,
     name: String,
     format: String,
+    currency: String,
     price: Number,
   },
 });

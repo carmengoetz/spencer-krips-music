@@ -18,6 +18,7 @@
             :name="product.name"
             :format="product.format"
             :price="product.price"
+            :currency="product.currency"
             :key="product.index"
           />
         </transition-group>

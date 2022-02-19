@@ -149,7 +149,7 @@ export default Vue.extend({
               contents: {
                 img: false,
                 imgWithCarousel: true,
-                button: true,
+                button: id?.value === "7589284446456" ? false : true,
                 buttonWithQuantity: false,
                 description: true,
               },
