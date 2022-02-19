@@ -87,6 +87,7 @@ export default Vue.extend({
     &:hover {
       background-color: #8a4d58;
       border-radius: 50px;
+      transition: background-color 0.5s ease;
     }
   }
 }
