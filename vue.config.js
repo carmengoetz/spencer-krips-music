@@ -2,6 +2,7 @@ module.exports = {
   transpileDependencies: ["vuetify"],
   pluginOptions: {
     sitemap: {
+      outputDir: "./public",
       baseURL: "https://spencerkripsmusic.com",
       routes: [
         {
