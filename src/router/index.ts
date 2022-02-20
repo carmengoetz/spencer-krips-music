@@ -13,11 +13,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -25,7 +27,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -43,11 +46,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -55,7 +60,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -74,11 +80,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -86,7 +94,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -105,11 +114,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -117,7 +128,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -135,11 +147,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -147,7 +161,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -166,11 +181,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -178,7 +195,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -197,11 +215,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -209,7 +229,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -229,11 +250,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -241,7 +264,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -260,11 +284,13 @@ const routes: Array<RouteConfig> = [
       metaTags: [
         {
           name: "description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "og:url",
@@ -272,7 +298,8 @@ const routes: Array<RouteConfig> = [
         },
         {
           property: "twitter:description",
-          content: "",
+          content:
+            "Compositions and arrangements by Spencer Krips, including Jenny for Brass Band. Available for purchase through his shop.",
         },
         {
           property: "twitter:url",
@@ -293,7 +320,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta?.title ?? "Creative Reyne";
+  document.title = to.meta?.title ?? "Spencer Krips Music";
 
   // Remove any stale meta tags from the document using the key attribute we set below.
   Array.from(document.querySelectorAll("[data-vue-router-controlled]")).map(
