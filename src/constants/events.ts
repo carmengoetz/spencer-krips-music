@@ -98,9 +98,59 @@ export const Events: { events: Event[] } = {
     },
     {
       index: 7,
+      title: "Strata Festival - Hot Spot",
+      who: "The Footnotes Jazz Collective",
+      date: new Date("2022-05-27T23:59:59"),
+      where: "Quance Theatre, University of Saskatchewan, Saskatoon",
+      what: "Composition & Performance - Bass Trombone",
+      description:
+        "The Footnotes Big Band is a local ensemble comprised of talented young musicians who share a love of modern jazz music. The group focuses on performing new works arranged and composed by the band members. This Big Band is part of the Footnotes Jazz Collective, a music project created by Rhett Schroeder in the spring of 2020 to showcase different ensembles.",
+      image: require("../assets/events/strata-festival-hot-spot.jpeg"),
+      link: "https://stratafest.com/2022/05/27/hotspot/",
+    },
+    {
+      index: 8,
+      title: "Strata Festival - Blindspot",
+      who: "The Strata Ensemble",
+      date: new Date("2022-05-28T23:59:59"),
+      where: "Quance Theatre, University of Saskatchewan, Saskatoon",
+      what: "Composition",
+      description:
+        "In early 2022, the Strata Festival of New Music asked Saskatchewan composers to submit proposals for music that explored new perspectives on the theme of environmentalism – and the composers did not disappoint! These pieces approach topics such as the space between non-human and human development, the monsoon rains in India, the diverse forms found in nature, and others.",
+      image: require("../assets/events/strata-festival-blindspot.jpeg"),
+      link: "https://stratafest.com/2022/05/28/blindspot/",
+    },
+    {
+      index: 9,
+      title: "Saskatchewan Jazz Festival",
+      who: "The Footnotes Jazz Collective",
+      date: new Date("2022-07-04T23:59:59"),
+      where: "Victoria Park, Saskatoon",
+      what: "Composition & Performance - Bass Trombone",
+      description:
+        "The Footnotes Big Band is a local ensemble comprised of young and talented musicians who share a love for modern jazz music. Bringing a new voice to the Saskatchewan jazz scene, they offer a contemporary take on the big band tradition featuring original compositions and arrangements.",
+      image: require("../assets/events/jazz-festival-footnotes.jpeg"),
+      link: "https://www.saskjazz.com/event/the-footnotes-big-band/",
+    },
+    {
+      index: 10,
+      title:
+        "Saskatchewan Jazz Festival - Prairie Rhythms: 35 Years of Jazz, Community, and Fun",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2022-07-07T23:59:59"),
+      where: "Bessborough Gardens, Saskatoon",
+      what: "Performance - Trombone",
+      description:
+        "Under the direction of Dean McNeill the Saskatchewan Jazz Orchestra (SJO) is proud to help celebrate the SaskTel Jazz Festival’s 35th anniversary through this one-time-only gala concert featuring home grown Sk talent from multiple generations! Confirmed artists include Ted Warren (Drums), multi Juno award winner Jon Ballantyne (Piano), Al Muirhead (Trumpet), Juno award winner Mike Rud (Guitar), Ross Ulmer (Trombone), Sheldon Corbett (Sax), Barrie Redford (Trumept), Mark DeJong (Sax), plus a whole host of up and coming SK-based musical talent such as Erika Rybinski (Trombone), Spencer Krips (Trombone), Emmett Fortosky (Bass), Adam Streisel (Trumpet), The Saskatoon Youth Jazz Orchestra (SYJO) & friends directed by Nick Fanner, and, many more soon-to-be-announced special guests! Repertoire for this concert will include excerpts from the Regina Jazz Society’s Western Canadian Music Awards-nominated CD “The Saskatchewan Suite: The Story of Us” composed by Fred Stride, and, the “Saskatchewan Suite” composed by Juno award-wining pianist/composer Oliver Jones. Jones’ SK Suite was commissioned by the SaskTel SK Jazz Festival to commemorate the festival’s 25 anniversary. This concert will also feature premiers of 2 original new works composed by Silas Friesen and Paul Suchan.",
+      image: require("../assets/events/sjo-logo.svg"),
+      link: "https://www.saskjazz.com/event/prairie-rhythms-35-years-of-jazz-community-and-fun-featuring-the-saskatchewan-jazz-orchestra/",
+    },
+
+    {
+      index: 11,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
-      date: "TBD",
+      date: new Date("2023-03-23T23:59:59"),
       where: "TCU Place, Saskatoon",
       what: "Performance - Bass Trombone",
       description:

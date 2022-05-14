@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-    absolute
-    color="#8a4d58"
-    flat
-    height="78"
-    class="nav px-0 px-lg-16"
-  >
+  <v-app-bar absolute color="#8a4d58" flat height="78" class="nav px-0 px-lg-16">
     <router-link
       class="nav__logo"
       data-text="Spencer Krips Music"
@@ -41,7 +35,7 @@
       </template>
       <v-card class="nav__links--mobile d-inline d-md-none mx-0">
         <v-list tile color="#8a4d58" class="py-0">
-          <v-list-item v-for="page in pages" :key="page.index" class="px-0">
+          <v-list-item v-for="page in pages" :key="page.name" class="px-0">
             <router-link
               class="nav__link nav__link--mobile py-4 text-center px-16"
               :data-text="page.name"
