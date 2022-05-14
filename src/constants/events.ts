@@ -156,7 +156,7 @@ export const Events: { events: Event[] } = {
       description:
         "Experience Disney’s award-winning “Frozen” in a new way with the Saskatoon Symphony Orchestra (SSO). As “Frozen” plays on a large movie screen, Martin MacDonald will lead the SSO performing the film’s score live to film.",
       image: require("../assets/events/disneys-frozen.png"),
-      link: "https://saskatoonsymphony.org/event/disneys-frozen-film-in-concert/",
+      link: "https://saskatoonsymphony.org/event/frozen-in-concert/",
     },
   ],
 };
