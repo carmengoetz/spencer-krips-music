@@ -145,9 +145,45 @@ export const Events: { events: Event[] } = {
       image: require("../assets/events/sjo-logo.svg"),
       link: "https://www.saskjazz.com/event/prairie-rhythms-35-years-of-jazz-community-and-fun-featuring-the-saskatchewan-jazz-orchestra/",
     },
-
     {
       index: 11,
+      title: "Poetics of Jazz",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2022-10-22T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance & Composition - First Trombone",
+      description:
+"Celebrating and showcasing Saskatchewan-based poets by combining poetry with original music",
+      image: require("../assets/events/poetics-of-jazz.png"),
+      link: "https://saskatoonjazzorchestra.com/event/poetics-of-jazz/",
+    },
+    {
+      index: 12,
+      title: "Swing Comfort and Joy",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2022-12-10T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - First Trombone",
+      description:
+"Celebrate the holidays & give thanks ala swing with the SJO (ft. Alexis Normand)",
+      image: require("../assets/events/swing-comfort-and-joy.png"),
+      link: "https://saskatoonjazzorchestra.com/event/swing-comfort-joy/",
+    },
+    {
+      index: 13,
+      title: "Rhapsody in Blue",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2023-03-11T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - First Trombone",
+      description:
+"Celebrating nearly 100 years of Rhapsody in Blue with Jens Lindemann and Michelle Aalders",
+      image: require("../assets/events/rhapsody-in-blue.png"),
+      link: "https://saskatoonjazzorchestra.com/event/rhapsody-in-blue/",
+    },
+
+    {
+      index: 14,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
       date: new Date("2023-03-23T23:59:59"),
@@ -157,6 +193,18 @@ export const Events: { events: Event[] } = {
         "Experience Disney’s award-winning “Frozen” in a new way with the Saskatoon Symphony Orchestra (SSO). As “Frozen” plays on a large movie screen, Martin MacDonald will lead the SSO performing the film’s score live to film.",
       image: require("../assets/events/disneys-frozen.png"),
       link: "https://saskatoonsymphony.org/event/frozen-in-concert/",
+    },
+    {
+      index: 15,
+      title: "Pictures at an Exhibition Reimagined",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2023-04-29T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - Second Trombone",
+      description:
+"An International Jazz Day Eve celebration featuring the one and only guest conductor and arranger Fred Stride",
+      image: require("../assets/events/pictures-at-an-exhibition-reimagined.png"),
+      link: "https://saskatoonjazzorchestra.com/event/pictures-at-an-exhibition-reimagined/",
     },
   ],
 };
