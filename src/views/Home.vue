@@ -113,7 +113,7 @@
                     color="#8a4d58"
                     class="home__modal--button my-2"
                     elevation="0"
-                    href="https://music.apple.com/us/album/behold-the-sonic-universe/1586246399"
+                    href="https://music.youtube.com/playlist?list=OLAK5uy_nbOlukt1KkNLEkGYfqNTFqyS1gQYITwiY"
                     target="_blank"
                     rel="noreferrer"
                     ><v-icon size="30" color="white" class="mr-2">
