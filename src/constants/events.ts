@@ -159,6 +159,18 @@ export const Events: { events: Event[] } = {
     },
     {
       index: 12,
+      title: "25th Elim Christmas 'Finale'",
+      who: "The Elim Choir",
+      date: new Date("2022-11-23T23:59:59"),
+      where: "TCU Place, Saskatoon",
+      what: "Performance - Bass Trombone",
+      description:
+"The Elim Choir, featured performers and 25-piece orchestra are joined by guest artists Leon Leontaridis, local favorite Chelsea Mahan and aerialist Nicole Shroeder, all to be held in the beautiful Sid Buckwold Theatre at TCU Place in Saskatoon for two performances on November 23 and November 24.",
+      image: require("../assets/events/elim-christmas-finale.jpeg"),
+      link: "https://www.elimchurch.ca/christmascelebration",
+    },
+    {
+      index: 13,
       title: "Swing Comfort and Joy",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2022-12-10T23:59:59"),
@@ -170,7 +182,7 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/swing-comfort-joy/",
     },
     {
-      index: 13,
+      index: 14,
       title: "Rhapsody in Blue",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-03-11T23:59:59"),
@@ -183,7 +195,7 @@ export const Events: { events: Event[] } = {
     },
 
     {
-      index: 14,
+      index: 15,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
       date: new Date("2023-03-23T23:59:59"),
@@ -195,7 +207,7 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonsymphony.org/event/frozen-in-concert/",
     },
     {
-      index: 15,
+      index: 16,
       title: "Pictures at an Exhibition Reimagined",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-04-29T23:59:59"),
