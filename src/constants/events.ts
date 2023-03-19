@@ -153,7 +153,7 @@ export const Events: { events: Event[] } = {
       where: "Broadway Theatre, Saskatoon",
       what: "Performance & Composition - First Trombone",
       description:
-"Celebrating and showcasing Saskatchewan-based poets by combining poetry with original music",
+        "Celebrating and showcasing Saskatchewan-based poets by combining poetry with original music",
       image: require("../assets/events/poetics-of-jazz.png"),
       link: "https://saskatoonjazzorchestra.com/event/poetics-of-jazz/",
     },
@@ -165,7 +165,7 @@ export const Events: { events: Event[] } = {
       where: "TCU Place, Saskatoon",
       what: "Performance - Bass Trombone",
       description:
-"The Elim Choir, featured performers and 25-piece orchestra are joined by guest artists Leon Leontaridis, local favorite Chelsea Mahan and aerialist Nicole Shroeder, all to be held in the beautiful Sid Buckwold Theatre at TCU Place in Saskatoon for two performances on November 23 and November 24.",
+        "The Elim Choir, featured performers and 25-piece orchestra are joined by guest artists Leon Leontaridis, local favorite Chelsea Mahan and aerialist Nicole Shroeder, all to be held in the beautiful Sid Buckwold Theatre at TCU Place in Saskatoon for two performances on November 23 and November 24.",
       image: require("../assets/events/elim-christmas-finale.jpeg"),
       link: "https://www.elimchurch.ca/christmascelebration",
     },
@@ -177,7 +177,7 @@ export const Events: { events: Event[] } = {
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - First Trombone",
       description:
-"Celebrate the holidays & give thanks ala swing with the SJO (ft. Alexis Normand)",
+        "Celebrate the holidays & give thanks ala swing with the SJO (ft. Alexis Normand)",
       image: require("../assets/events/swing-comfort-and-joy.png"),
       link: "https://saskatoonjazzorchestra.com/event/swing-comfort-joy/",
     },
@@ -189,7 +189,7 @@ export const Events: { events: Event[] } = {
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - First Trombone",
       description:
-"Celebrating nearly 100 years of Rhapsody in Blue with Jens Lindemann and Michelle Aalders",
+        "Celebrating nearly 100 years of Rhapsody in Blue with Jens Lindemann and Michelle Aalders",
       image: require("../assets/events/rhapsody-in-blue.png"),
       link: "https://saskatoonjazzorchestra.com/event/rhapsody-in-blue/",
     },
@@ -198,7 +198,7 @@ export const Events: { events: Event[] } = {
       index: 15,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
-      date: new Date("2023-03-23T23:59:59"),
+      date: new Date("2023-03-18T23:59:59"),
       where: "TCU Place, Saskatoon",
       what: "Performance - Bass Trombone",
       description:
@@ -214,7 +214,7 @@ export const Events: { events: Event[] } = {
       where: "Broadway Theatre, Saskatoon",
       what: "Performance - Second Trombone",
       description:
-"An International Jazz Day Eve celebration featuring the one and only guest conductor and arranger Fred Stride",
+        "An International Jazz Day Eve celebration featuring the one and only guest conductor and arranger Fred Stride",
       image: require("../assets/events/pictures-at-an-exhibition-reimagined.png"),
       link: "https://saskatoonjazzorchestra.com/event/pictures-at-an-exhibition-reimagined/",
     },
