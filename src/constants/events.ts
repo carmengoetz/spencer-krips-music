@@ -193,7 +193,6 @@ export const Events: { events: Event[] } = {
       image: require("../assets/events/rhapsody-in-blue.png"),
       link: "https://saskatoonjazzorchestra.com/event/rhapsody-in-blue/",
     },
-
     {
       index: 15,
       title: "Disney's Frozen - In Concert Live to Film",
@@ -208,6 +207,18 @@ export const Events: { events: Event[] } = {
     },
     {
       index: 16,
+      title: "Keyed to Life, the Music of Stevie Wonder",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2023-04-22T23:59:59"),
+      where: "Anne Portnuff Theatre - Yorkton Regional High School, Yorkton",
+      what: "Performance - First Trombone",
+      description:
+        "Over 100 million albums sold world-wide, 22 Grammy Awards, an Academy Award (Best Original Song), Star on the Hollywood Walk of Fame, R&B Hall of Fame, Rock & Roll Hall of Fame, Songwriter’s Hall of Fame, are but a few of the accolades honouring the spectacular musical career of the one and only Stevie Wonder. The universality of Stevie Wonder and his music serve as the inspiration behind this Saskatoon Jazz Orchestra show. It will feature a blend of classic and reimagined renditions of Stevie Wonder’s incredibly joy-filled music, presented though the ‘lens’ of Saskatoon’s premiere large jazz orchestra the SJO.",
+      image: require("../assets/events/SJO.jpeg"),
+      link: "https://www.osac.ca/index.php?option=com_content&view=article&id=156&artist=Saskatoon+Jazz+Orchestra%3A+Keyed+to+Life%2C+the+Music+of+Stevie+Wonder",
+    },
+    {
+      index: 17,
       title: "Pictures at an Exhibition Reimagined",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-04-29T23:59:59"),
