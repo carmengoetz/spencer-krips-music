@@ -238,7 +238,7 @@ export const Events: { events: Event[] } = {
       what: "Performance - First Trombone",
       description:
         "An exciting recent addition to Saskatoon’s vibrant music scene the Footnotes Big Band directed by USASK B.Mus. graduate Rhett Schroeder is a 17-piece jazz big band comprised of aspiring Saskatoon-based musicians with a passion for all things jazz, funk, and rock. The Footnotes Big Band began as an outdoor trio project during the pandemic to share music with the community. Through an infectious love of arranging and performing music, this project quickly grew to big band proportions. Following one of their most recent performances at the Broadway Theatre’s Winterruption Festival, the Footnotes Big Band continues to energize the Saskatoon jazz scene with fresh musical arrangements in unique ways that span many musical styles and genres including pop, jazz, funk, rap, folk, classic rock, heavy metal, and even video game music. Don’t miss this electric energy set as the Footnotes Big Band ends the night on a high note!",
-      image: require("../assets/events/jazz-festival-footnotes.jpeg"),
+      image: require("../assets/events/jazz-festival-footnotes-2023.jpeg"),
       link: "https://www.saskjazz.com/event/saskatoon-jazz-orchestra-guests/",
     },
   ],
