@@ -1,29 +1,31 @@
 <template>
   <div class="events mt-10 mt-md-16">
-    <v-row no-gutters justify="center">
-      <h1 class="events__heading mb-4 mb-md-6">Upcoming Events</h1>
-    </v-row>
-    <transition-group appear name="events__slide">
-      <v-row
-        no-gutters
-        justify="start"
-        align="center"
-        v-for="item in upcomingEvents"
-        :key="item.index"
-      >
-        <Event
-          :link="item.link"
-          :image="item.image"
-          :title="item.title"
-          :date="item.date"
-          :who="item.who"
-          :where="item.where"
-          :what="item.what"
-          :description="item.description"
-        />
+    <div v-if="upcomingEvents.length !== 0">
+      <v-row no-gutters justify="center">
+        <h1 class="events__heading mb-4 mb-md-6">Upcoming Events</h1>
       </v-row>
-    </transition-group>
-    <hr class="events__hr mt-4 mb-8" />
+      <transition-group appear name="events__slide">
+        <v-row
+          no-gutters
+          justify="start"
+          align="center"
+          v-for="item in upcomingEvents"
+          :key="item.index"
+        >
+          <Event
+            :link="item.link"
+            :image="item.image"
+            :title="item.title"
+            :date="item.date"
+            :who="item.who"
+            :where="item.where"
+            :what="item.what"
+            :description="item.description"
+          />
+        </v-row>
+      </transition-group>
+      <hr class="events__hr mt-4 mb-8" />
+    </div>
     <v-row no-gutters justify="center">
       <h1 class="events__heading mb-4 mb-md-6">Past Events</h1>
     </v-row>

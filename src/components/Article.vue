@@ -69,7 +69,7 @@ export default Vue.extend({
   }
 
   &__publication-date {
-    color: #8a4d58;
+    color: #568e55;
     font-style: italic;
   }
 

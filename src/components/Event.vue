@@ -75,7 +75,7 @@ export default Vue.extend({
 
   &__date-who-where,
   &__what {
-    color: #8a4d58;
+    color: #568e55;
     font-style: italic;
   }
 
