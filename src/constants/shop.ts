@@ -4,7 +4,6 @@ type Category = {
 };
 
 type Product = {
-  index: number;
   id: number;
   categories: number[];
   name: string;
@@ -44,7 +43,6 @@ export const Shop: Shop = {
   ],
   products: [
     {
-      index: 0,
       id: 7584649216248,
       categories: [391403045112, 391403176184],
       name: "behold, the sonic universe",
@@ -54,7 +52,6 @@ export const Shop: Shop = {
       image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
-      index: 1,
       id: 7584640827640,
       categories: [391403045112, 391509016824],
       name: "behold, the sonic universe",
@@ -64,7 +61,6 @@ export const Shop: Shop = {
       image: require("../assets/products/behold-the-sonic-universe.png"),
     },
     {
-      index: 2,
       id: 7584636502264,
       categories: [391403045112, 391509016824],
       name: "Jenny",
@@ -74,7 +70,6 @@ export const Shop: Shop = {
       image: require("../assets/products/jenny.png"),
     },
     {
-      index: 3,
       id: 7589284446456,
       categories: [391403045112, 391509016824],
       name: "Perseus",
@@ -84,7 +79,6 @@ export const Shop: Shop = {
       image: require("../assets/products/perseus.png"),
     },
     {
-      index: 4,
       id: 7584641220856,
       categories: [391403045112, 391509016824],
       name: "Pseudopop in Teal",
@@ -94,7 +88,6 @@ export const Shop: Shop = {
       image: require("../assets/products/pseudopop-in-teal.png"),
     },
     {
-      index: 5,
       id: 7584642760952,
       categories: [391403045112, 391403110648],
       name: "See How Low the Moon Hangs",
@@ -104,7 +97,6 @@ export const Shop: Shop = {
       image: require("../assets/products/see-how-low-the-moon-hangs.png"),
     },
     {
-      index: 6,
       id: 7584644366584,
       categories: [391403045112, 391509016824],
       name: "to be whole",
@@ -114,7 +106,6 @@ export const Shop: Shop = {
       image: require("../assets/products/to-be-whole.png"),
     },
     {
-      index: 7,
       id: 7584646660344,
       categories: [391403045112, 391509016824],
       name: "Ward Lock",
@@ -124,7 +115,6 @@ export const Shop: Shop = {
       image: require("../assets/products/ward-lock.png"),
     },
     {
-      index: 8,
       id: 7584648331512,
       categories: [391403045112, 391403110648],
       name: "what counts as silence",
@@ -135,7 +125,6 @@ export const Shop: Shop = {
     },
     // Apparel - not on website for now
     // {
-    //   index: 9,
     //   id: 7584655278328,
     //   categories: [391403241720],
     //   name: "Jenny",
@@ -145,7 +134,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/jenny-unisex-black.png"),
     // },
     // {
-    //   index: 10,
     //   id: 7584651051256,
     //   categories: [391403241720],
     //   name: "Jenny",
@@ -155,7 +143,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/jenny-women-black.png"),
     // },
     // {
-    //   index: 11,
     //   id: 7584654098680,
     //   categories: [391403241720],
     //   name: "Jenny",
@@ -165,7 +152,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/jenny-unisex-white.png"),
     // },
     // {
-    //   index: 12,
     //   id: 7584650756344,
     //   categories: [391403241720],
     //   name: "Jenny",
@@ -175,7 +161,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/jenny-women-white.png"),
     // },
     // {
-    //   index: 13,
     //   id: 7584660881656,
     //   categories: [391403241720],
     //   name: "Kibo",
@@ -185,7 +170,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/kibo-unisex-black.png"),
     // },
     // {
-    //   index: 14,
     //   id: 7584651542776,
     //   categories: [391403241720],
     //   name: "Kibo",
@@ -205,7 +189,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/kibo-unisex-white.png"),
     // },
     // {
-    //   index: 16,
     //   id: 7584649904376,
     //   categories: [391403241720],
     //   name: "Kibo",
@@ -215,7 +198,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/kibo-women-white.png"),
     // },
     // {
-    //   index: 17,
     //   id: 7584653574392,
     //   categories: [391403241720],
     //   name: "of loss",
@@ -225,7 +207,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/of-loss-unisex-black.png"),
     // },
     // {
-    //   index: 18,
     //   id: 7584650526968,
     //   categories: [391403241720],
     //   name: "of loss",
@@ -235,7 +216,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/of-loss-women-black.png"),
     // },
     // {
-    //   index: 19,
     //   id: 7584653279480,
     //   categories: [391403241720],
     //   name: "of loss",
@@ -245,7 +225,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/of-loss-unisex-white.png"),
     // },
     // {
-    //   index: 20,
     //   id: 7584650166520,
     //   categories: [391403241720],
     //   name: "of loss",
@@ -255,7 +234,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/of-loss-women-white.png"),
     // },
     // {
-    //   index: 21,
     //   id: 7584654000376,
     //   categories: [391403241720],
     //   name: "Perseus",
@@ -265,7 +243,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/perseus-unisex-black.png"),
     // },
     // {
-    //   index: 22,
     //   id: 7584650592504,
     //   categories: [391403241720],
     //   name: "Perseus",
@@ -275,7 +252,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/perseus-women-black.png"),
     // },
     // {
-    //   index: 23,
     //   id: 7584653869304,
     //   categories: [391403241720],
     //   name: "Perseus",
@@ -285,7 +261,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/perseus-unisex-white.png"),
     // },
     // {
-    //   index: 24,
     //   id: 7584650428664,
     //   categories: [391403241720],
     //   name: "Perseus",
@@ -295,7 +270,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/perseus-women-white.png"),
     // },
     // {
-    //   index: 25,
     //   id: 7584663732472,
     //   categories: [391403241720],
     //   name: "Pseudopop in Teal",
@@ -305,7 +279,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/pseudopop-in-teal-unisex-black.png"),
     // },
     // {
-    //   index: 26,
     //   id: 7584651870456,
     //   categories: [391403241720],
     //   name: "Pseudopop in Teal",
@@ -315,7 +288,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/pseudopop-in-teal-women-black.png"),
     // },
     // {
-    //   index: 27,
     //   id: 7584662454520,
     //   categories: [391403241720],
     //   name: "Pseudopop in Teal",
@@ -325,7 +297,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/pseudopop-in-teal-unisex-white.png"),
     // },
     // {
-    //   index: 28,
     //   id: 7584651804920,
     //   categories: [391403241720],
     //   name: "Pseudopop in Teal",
@@ -335,7 +306,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/pseudopop-in-teal-women-white.png"),
     // },
     // {
-    //   index: 29,
     //   id: 7584669139192,
     //   categories: [391403241720],
     //   name: "See How Low the Moon Hangs",
@@ -345,7 +315,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/see-how-low-the-moon-hangs-unisex-black.png"),
     // },
     // {
-    //   index: 30,
     //   id: 7584652165368,
     //   categories: [391403241720],
     //   name: "See How Low the Moon Hangs",
@@ -355,7 +324,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/see-how-low-the-moon-hangs-women-black.png"),
     // },
     // {
-    //   index: 31,
     //   id: 7584666222840,
     //   categories: [391403241720],
     //   name: "See How Low the Moon Hangs",
@@ -365,7 +333,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/see-how-low-the-moon-hangs-unisex-white.png"),
     // },
     // {
-    //   index: 32,
     //   id: 7584652034296,
     //   categories: [391403241720],
     //   name: "See How Low the Moon Hangs",
@@ -375,7 +342,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/see-how-low-the-moon-hangs-women-white.png"),
     // },
     // {
-    //   index: 33,
     //   id: 7584653050104,
     //   categories: [391403241720],
     //   name: "Ward Lock",
@@ -385,7 +351,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/ward-lock-unisex-black.png"),
     // },
     // {
-    //   index: 34,
     //   id: 7584649740536,
     //   categories: [391403241720],
     //   name: "Ward Lock",
@@ -395,7 +360,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/ward-lock-women-black.png"),
     // },
     // {
-    //   index: 35,
     //   id: 7584652787960,
     //   categories: [391403241720],
     //   name: "Ward Lock",
@@ -405,7 +369,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/ward-lock-unisex-white.png"),
     // },
     // {
-    //   index: 36,
     //   id: 7584650002680,
     //   categories: [391403241720],
     //   name: "Ward Lock",
@@ -415,7 +378,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/ward-lock-women-white.png"),
     // },
     // {
-    //   index: 37,
     //   id: 7584673988856,
     //   categories: [391403241720],
     //   name: "what counts as silence",
@@ -425,7 +387,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/what-counts-as-silence-unisex-black.png"),
     // },
     // {
-    //   index: 38,
     //   id: 7584652361976,
     //   categories: [391403241720],
     //   name: "what counts as silence",
@@ -435,7 +396,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/what-counts-as-silence-women-black.png"),
     // },
     // {
-    //   index: 39,
     //   id: 7584672022776,
     //   categories: [391403241720],
     //   name: "what counts as silence",
@@ -445,7 +405,6 @@ export const Shop: Shop = {
     //   image: require("../assets/products/what-counts-as-silence-unisex-white.png"),
     // },
     // {
-    //   index: 40,
     //   id: 7584652493048,
     //   categories: [391403241720],
     //   name: "what counts as silence",

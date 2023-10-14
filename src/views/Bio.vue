@@ -20,12 +20,12 @@
           class="bio__description--paragraphs"
         >
           <v-card-text
-            v-for="paragraph in Bio.paragraphs"
-            :key="paragraph.index"
+            v-for="(paragraph, index) in Bio.paragraphs"
+            :key="index"
             color="white"
             class="bio__description--paragraph pb-0 pb-md-4 pt-md-0"
           >
-            {{ paragraph.text }}
+            {{ paragraph }}
           </v-card-text>
         </v-card>
       </v-col>

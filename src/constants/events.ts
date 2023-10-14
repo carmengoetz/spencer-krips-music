@@ -1,5 +1,4 @@
 type Event = {
-  index: number;
   title: string;
   who: string;
   date: Date | string;
@@ -13,7 +12,6 @@ type Event = {
 export const Events: { events: Event[] } = {
   events: [
     {
-      index: 0,
       title: "The Footnotes Big Band",
       who: "The Footnotes Jazz Collective",
       date: new Date("2021-09-21T23:59:59"),
@@ -25,7 +23,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.facebook.com/events/3224107931149997/",
     },
     {
-      index: 1,
       title: "Hedwig and the Angry Inch",
       who: "Sparrow Theatre Company",
       date: new Date("2021-09-28T23:59:59"),
@@ -37,7 +34,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.facebook.com/events/2983286145271417/",
     },
     {
-      index: 2,
       title: "Back in the Swing of Things!",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2021-11-13T23:59:59"),
@@ -49,7 +45,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/back-in-the-swing-of-things/",
     },
     {
-      index: 3,
       title: "Folktales & Festivities",
       who: "Katrina MacKinnon & Terri-Lynn Mitchell",
       date: new Date("2021-12-05T23:59:59"),
@@ -61,7 +56,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.facebook.com/events/2936537516658429/",
     },
     {
-      index: 4,
       title: "Make a Joyful Noise",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2021-12-11T23:59:59"),
@@ -73,7 +67,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/make-a-joyful-noise-2021/",
     },
     {
-      index: 5,
       title: "The Fab 4 and More: Beatles for Big Band",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2022-05-13T23:59:59"),
@@ -85,7 +78,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/the-fab-4-and-more/",
     },
     {
-      index: 6,
       title: "Dimensions in Sound",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2022-06-17T23:59:59"),
@@ -97,7 +89,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/dimensions-in-sound/",
     },
     {
-      index: 7,
       title: "Strata Festival - Hot Spot",
       who: "The Footnotes Jazz Collective",
       date: new Date("2022-05-27T23:59:59"),
@@ -109,7 +100,6 @@ export const Events: { events: Event[] } = {
       link: "https://stratafest.com/2022/05/27/hotspot/",
     },
     {
-      index: 8,
       title: "Strata Festival - Blindspot",
       who: "The Strata Ensemble",
       date: new Date("2022-05-28T23:59:59"),
@@ -121,7 +111,6 @@ export const Events: { events: Event[] } = {
       link: "https://stratafest.com/2022/05/28/blindspot/",
     },
     {
-      index: 9,
       title: "Saskatchewan Jazz Festival",
       who: "The Footnotes Jazz Collective",
       date: new Date("2022-07-04T23:59:59"),
@@ -133,7 +122,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.saskjazz.com/event/the-footnotes-big-band/",
     },
     {
-      index: 10,
       title:
         "Saskatchewan Jazz Festival - Prairie Rhythms: 35 Years of Jazz, Community, and Fun",
       who: "Saskatoon Jazz Orchestra",
@@ -146,7 +134,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.saskjazz.com/event/prairie-rhythms-35-years-of-jazz-community-and-fun-featuring-the-saskatchewan-jazz-orchestra/",
     },
     {
-      index: 11,
       title: "Poetics of Jazz",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2022-10-22T23:59:59"),
@@ -158,7 +145,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/poetics-of-jazz/",
     },
     {
-      index: 12,
       title: "25th Elim Christmas 'Finale'",
       who: "The Elim Choir",
       date: new Date("2022-11-23T23:59:59"),
@@ -170,7 +156,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.elimchurch.ca/christmascelebration",
     },
     {
-      index: 13,
       title: "Swing Comfort and Joy",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2022-12-10T23:59:59"),
@@ -182,7 +167,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/swing-comfort-joy/",
     },
     {
-      index: 14,
       title: "Rhapsody in Blue",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-03-11T23:59:59"),
@@ -194,7 +178,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/rhapsody-in-blue/",
     },
     {
-      index: 15,
       title: "Disney's Frozen - In Concert Live to Film",
       who: "Saskatoon Symphony Orchestra",
       date: new Date("2023-03-18T23:59:59"),
@@ -206,7 +189,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonsymphony.org/event/frozen-in-concert/",
     },
     {
-      index: 16,
       title: "Keyed to Life, the Music of Stevie Wonder",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-04-22T23:59:59"),
@@ -218,7 +200,6 @@ export const Events: { events: Event[] } = {
       link: "https://www.osac.ca/index.php?option=com_content&view=article&id=156&artist=Saskatoon+Jazz+Orchestra%3A+Keyed+to+Life%2C+the+Music+of+Stevie+Wonder",
     },
     {
-      index: 17,
       title: "Pictures at an Exhibition Reimagined",
       who: "Saskatoon Jazz Orchestra",
       date: new Date("2023-04-29T23:59:59"),
@@ -230,7 +211,6 @@ export const Events: { events: Event[] } = {
       link: "https://saskatoonjazzorchestra.com/event/pictures-at-an-exhibition-reimagined/",
     },
     {
-      index: 18,
       title: "Saskatchewan Jazz Festival - Generations of Artistry and Swing",
       who: "The Footnotes Jazz Collective",
       date: new Date("2023-07-05T23:59:59"),
@@ -240,6 +220,82 @@ export const Events: { events: Event[] } = {
         "An exciting recent addition to Saskatoon’s vibrant music scene the Footnotes Big Band directed by USASK B.Mus. graduate Rhett Schroeder is a 17-piece jazz big band comprised of aspiring Saskatoon-based musicians with a passion for all things jazz, funk, and rock. The Footnotes Big Band began as an outdoor trio project during the pandemic to share music with the community. Through an infectious love of arranging and performing music, this project quickly grew to big band proportions. Following one of their most recent performances at the Broadway Theatre’s Winterruption Festival, the Footnotes Big Band continues to energize the Saskatoon jazz scene with fresh musical arrangements in unique ways that span many musical styles and genres including pop, jazz, funk, rap, folk, classic rock, heavy metal, and even video game music. Don’t miss this electric energy set as the Footnotes Big Band ends the night on a high note!",
       image: require("../assets/events/jazz-festival-footnotes-2023.jpeg"),
       link: "https://www.saskjazz.com/event/saskatoon-jazz-orchestra-guests/",
+    },
+    {
+      title: "The Footnotes Big Band",
+      who: "The Footnotes Jazz Collective",
+      date: new Date("2021-09-21T23:59:59"),
+      where: "River Landing Ampitheater, Saskatoon",
+      what: "Compositions & Performance",
+      description:
+        "The Footnotes Jazz Collective presents: the Footnotes Big Band! Come down to the River Landing Amphitheater next to the spray park for some big band classics mixed in with brand new arrangements!",
+      image: require("../assets/events/the-footnotes-jazz-collective.png"),
+      link: "https://www.facebook.com/events/3224107931149997/",
+    },
+    {
+      title: "Cinq Morceaux",
+      who: "The Strata Ensemble",
+      date: new Date("2023-06-03T23:59:59"),
+      where: "Zion Lutheran Church, Saskatoon",
+      what: "Composition",
+      description:
+        "Experience a truly unique culinary and musical event that explores the fascinating connection between your sense of taste and hearing. Join us for an evening of five distinct appetizers paired with five specially composed pieces of music, each corresponding to a different modality of taste – bitter, sour, savoury, salty, and sweet.",
+      image: require("../assets/events/strata-cinq-morceaux.jpeg"),
+      link: "https://stratafest.com/event/cinq-morceaux/",
+    },
+    {
+      title: "10th Anniversary Gala Concert",
+      who: "The 2023 PMR Brass Band",
+      date: new Date("2023-08-13T23:59:59"),
+      where: "Quance Theatre, Saskatoon",
+      what: "Arrangement",
+      description: "",
+      image: require("../assets/events/pmr-gala-concert.jpeg"),
+      link: "https://www.facebook.com/100057562656407/posts/pfbid0UySfv5f9rWt7iSHUnSWgP1K3LorFhDDtYjJQHz85H1eqDxhhSc4u5pBtQWa96GBml",
+    },
+    {
+      title: "Singing under the Moon",
+      who: "University of Saskatchewan Greystone Singers",
+      date: new Date("2023-09-20T23:59:59"),
+      where: "St John's Cathedral, Saskatoon",
+      what: "Composition",
+      description:
+        "Under the direction of Dr. Jennifer Lang, the University of Saskatchewan Greystone Singers, University Chorus, and members of Aurora Voce present a 45-minute choral concert underneath the Moon.",
+      image: require("../assets/events/singing-under-the-moon.jpeg"),
+      link: "https://saskatoonsymphony.org/event/usask-lunar-eclipse/",
+    },
+    {
+      title: "A Case of You",
+      who: "Saskatoon Symphony Orchestra",
+      date: new Date("2023-10-28T23:59:59"),
+      where: "TCU Place, Saskatoon",
+      what: "Performace - Third Trombone",
+      description:
+        "To celebrate Joni Mitchell’s 80th birthday, the SSO teams up with Sarah Slean to explore music from Mitchell’s albums Both Sides Now and Travelogue. Joni Mitchell has gained a reputation as one of the greatest musical artists of all time – it’s extra special to be able to showcase this performance here at the singer-songwriter’s hometown. Our 2018 performance of Mitchell’s music with Slean was a landmark first live performance of Vince Mendoza’s beautiful orchestrations – this new concert pairs favourites like A Case of You and Both Sides Now with classics like River, Blue, and Circle Game.",
+      image: require("../assets/events/a-case-of-you.jpeg"),
+      link: "https://saskatoonsymphony.org/event/a-case-of-you/",
+    },
+    {
+      title: "reservoirs of quiet",
+      who: "Spencer Krips",
+      date: new Date("2023-11-17T23:59:59"),
+      where: "PAVED Arts, Saskatoon",
+      what: "Composition & Performance",
+      description:
+        "Join us for an immersive audio experience at PAVED Arts in Saskatoon, SK, Canada. Combining spatial audio, reactive visuals, and improvised music, this immersive experience will draw you into the collaborations between performer, listener, and nature. Don't miss this unique opportunity to recharge and find your own reservoir of quiet.",
+      image: require("../assets/events/reservoirs-of-quiet.png"),
+      link: "https://www.eventbrite.com/e/reservoirs-of-quiet-tickets-735825884027",
+    },
+    {
+      title: "reservoirs of quiet",
+      who: "Spencer Krips",
+      date: new Date("2023-11-18T23:59:59"),
+      where: "PAVED Arts, Saskatoon",
+      what: "Composition & Performance",
+      description:
+        "Join us for an immersive audio experience at PAVED Arts in Saskatoon, SK, Canada. Combining spatial audio, reactive visuals, and improvised music, this immersive experience will draw you into the collaborations between performer, listener, and nature. Don't miss this unique opportunity to recharge and find your own reservoir of quiet.",
+      image: require("../assets/events/reservoirs-of-quiet.png"),
+      link: "https://www.eventbrite.com/e/reservoirs-of-quiet-tickets-735825884027",
     },
   ],
 };

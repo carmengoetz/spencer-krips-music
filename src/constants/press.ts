@@ -1,5 +1,4 @@
 type Article = {
-  index: number;
   title: string;
   date: Date;
   publication: string;
@@ -11,7 +10,6 @@ type Article = {
 export const Press: { articles: Article[] } = {
   articles: [
     {
-      index: 0,
       title: "behold, the sonic universe: new music from Spencer Krips",
       date: new Date("November 14, 2021"),
       publication: "Saskatchewan Weekend with Shauna Powers",
@@ -21,7 +19,6 @@ export const Press: { articles: Article[] } = {
       link: "https://www.cbc.ca/listen/live-radio/1-205-saskatchewan-weekend/clip/15878350-behold-sonic-universe-music-spencer-krips",
     },
     {
-      index: 1,
       title: "Spencer Krips drops new album",
       date: new Date("November 8, 2021"),
       publication: "CTV Saskatoon",
@@ -31,7 +28,6 @@ export const Press: { articles: Article[] } = {
       link: "https://saskatoon.ctvnews.ca/video?clipId=2317557",
     },
     {
-      index: 2,
       title:
         "All about that bass: Strata New Music Festival aims for new highs by going low",
       date: new Date("May 27, 2021"),
@@ -42,7 +38,6 @@ export const Press: { articles: Article[] } = {
       link: "https://thestarphoenix.com/entertainment/local-arts/all-about-that-bass-strata-new-music-festival-aims-for-new-highs-by-going-low",
     },
     {
-      index: 3,
       title: "USask student composer merges music and nature",
       date: new Date("December 17, 2020"),
       publication: "U of S Arts and Science",

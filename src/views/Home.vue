@@ -35,6 +35,38 @@
             align="end"
             class="my-0 my-sm-6 my-md-10 my-lg-16"
           >
+            <v-btn
+              tile
+              large
+              color="#8a4d58"
+              class="home__feature--button"
+              elevation="0"
+              href="https://www.eventbrite.com/e/reservoirs-of-quiet-tickets-735825884027"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buy Tickets</v-btn
+            >
+          </v-row></v-img
+        >
+        <!-- </v-row><v-row
+        no-gutters
+        align="center"
+        justify="center"
+        class="home__feature pa-0"
+        key="1"
+      >
+        <v-img
+          :src="Home.featureImage"
+          max-width="1240"
+          class="align-end home__feature--image"
+        >
+          <v-row
+            no-gutters
+            justify="center"
+            align="end"
+            class="my-0 my-sm-6 my-md-10 my-lg-16"
+          >
             <v-dialog tile v-model="dialog" width="500">
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
@@ -125,7 +157,7 @@
               </v-card>
             </v-dialog>
           </v-row></v-img
-        >
+        > -->
       </v-row>
     </transition-group>
   </div>

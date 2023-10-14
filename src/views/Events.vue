@@ -9,8 +9,8 @@
           no-gutters
           justify="start"
           align="center"
-          v-for="item in upcomingEvents"
-          :key="item.index"
+          v-for="(item, index) in upcomingEvents"
+          :key="index"
         >
           <Event
             :link="item.link"
@@ -33,8 +33,8 @@
       <v-row
         no-gutters
         justify="center"
-        v-for="item in pastEvents"
-        :key="item.index"
+        v-for="(item, index) in pastEvents"
+        :key="index"
       >
         <Event
           :link="item.link"

@@ -2,7 +2,7 @@
   <div class="press mt-6 mt-md-16">
     <div class="press__articles">
       <transition-group appear name="press__slide">
-        <v-row v-for="item in Press.articles" :key="item.index">
+        <v-row v-for="(item, index) in Press.articles" :key="index">
           <Article
             :link="item.link"
             :image="item.image"
