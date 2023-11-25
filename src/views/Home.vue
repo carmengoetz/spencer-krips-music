@@ -17,7 +17,7 @@
           ></v-img>
         </v-col>
       </v-row>
-      <v-row
+      <!-- <v-row
         no-gutters
         align="center"
         justify="center"
@@ -48,8 +48,9 @@
               Buy Tickets</v-btn
             >
           </v-row></v-img
-        >
-        <!-- </v-row><v-row
+        > 
+        </v-row> -->
+      <v-row
         no-gutters
         align="center"
         justify="center"
@@ -157,7 +158,7 @@
               </v-card>
             </v-dialog>
           </v-row></v-img
-        > -->
+        >
       </v-row>
     </transition-group>
   </div>

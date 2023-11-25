@@ -297,5 +297,16 @@ export const Events: { events: Event[] } = {
       image: require("../assets/events/reservoirs-of-quiet.png"),
       link: "https://www.eventbrite.com/e/reservoirs-of-quiet-tickets-735825884027",
     },
+    {
+      title: "Rachmaninoff Dances",
+      who: "Saskatoon Symphony Orchestra",
+      date: new Date("2023-11-25T23:59:59"),
+      where: "TCU Place, Saskatoon",
+      what: "Performace - Principal Trombone",
+      description:
+        "Maestro Robert Franz joins the SSO for a sensational night featuring Rachmaninoff’s Symphonic Dances. The concert marks the world premiere of a brand-new concerto by Vincent Ho. This SSO commission, years in the making, showcases world-renowned saxophonist Timothy McAllister center stage.",
+      image: require("../assets/events/rachmaninoff-dances.jpg"),
+      link: "https://saskatoonsymphony.org/event/rachmaninoff-dances/",
+    },
   ],
 };
