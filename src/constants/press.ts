@@ -10,6 +10,15 @@ type Article = {
 export const Press: { articles: Article[] } = {
   articles: [
     {
+      title: "Reservoirs of Quiet reinvents the sounds of Saskatoon",
+      date: new Date("December 28, 2023"),
+      publication: "The Starphoenix",
+      description:
+        "The music here is taking a real place, adding to it, interacting with it, turning a place that exists into something new.",
+      image: require("../assets/press/reservoirs-of-quiet.jpg"),
+      link: "https://thestarphoenix.com/news/local-news/reservoirs-of-music-reinvents-the-sounds-of-saskatoon",
+    },
+    {
       title: "behold, the sonic universe: new music from Spencer Krips",
       date: new Date("November 14, 2021"),
       publication: "Saskatchewan Weekend with Shauna Powers",
