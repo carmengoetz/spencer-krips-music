@@ -1,29 +1,67 @@
 <template>
-  <v-card
-    class="product d-flex flex-column px-4 py-6 ma-4"
-    height="372"
-    elevation="0"
-    color="#1b4452"
-    tile
-    :to="{
-      name: 'Product',
-      params: { id: id },
-    }"
-  >
-    <v-img width="262" height="262" :src="image" class="align-self-center"
-      ><template v-slot:placeholder>
-        <v-row class="fill-height ma-0" align="center" justify="center">
-          <v-progress-circular
-            indeterminate
-            color="grey lighten-5"
-          ></v-progress-circular>
-        </v-row> </template
-    ></v-img>
-    <v-spacer></v-spacer>
-    <div class="product__name mt-4 ml-4">{{ name }}</div>
-    <div class="product__format ml-4">{{ format }}</div>
-    <div class="product__price pb-4 ml-4">{{ currency }} ${{ price }}.00</div>
-  </v-card>
+  <v-dialog tile v-model="dialog" width="500">
+    <template v-slot:activator="{ on, attrs }">
+      <v-card
+        v-bind="attrs"
+        v-on="on"
+        class="product d-flex flex-column px-4 py-6 ma-4"
+        height="372"
+        elevation="0"
+        color="#1b4452"
+        tile
+      >
+        <v-img width="262" height="262" :src="image" class="align-self-center"
+          ><template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row> </template
+        ></v-img>
+        <v-spacer></v-spacer>
+        <div class="product__name mt-4 ml-4">{{ name }}</div>
+        <div class="product__format ml-4">{{ format }}</div>
+        <div class="product__price pb-4 ml-4">
+          {{ currency }} ${{ price }}.00
+        </div>
+      </v-card>
+    </template>
+
+    <v-card tile color="#015869">
+      <v-card-actions>
+        <v-card-title class="product__modal--title text-h5">
+          {{ name }}
+        </v-card-title>
+        <v-spacer></v-spacer>
+        <v-btn icon @click="dialog = false">
+          <v-icon color="white">mdi-close</v-icon>
+        </v-btn>
+      </v-card-actions>
+
+      <v-card-text>
+        <p class="product__modal--description">
+          Purchasing through Spencer Krips Music is temporarily closed. Please
+          contact me if you would like more information or to purchase directly.
+        </p>
+        <v-btn
+          tile
+          large
+          color="#8a4d58"
+          class="product__modal--button my-2"
+          elevation="0"
+          :to="{
+            name: 'Contact',
+            params: {
+              subject: name,
+            },
+          }"
+        >
+          Contact me</v-btn
+        >
+      </v-card-text>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script lang="ts">
@@ -39,6 +77,9 @@ export default Vue.extend({
     currency: String,
     price: Number,
   },
+  data: () => ({
+    dialog: false,
+  }),
 });
 </script>
 
@@ -66,6 +107,23 @@ export default Vue.extend({
 
   &__format {
     font: italic normal normal 14px raleway, sans-serif;
+  }
+
+  &__modal {
+    &--title {
+      font: normal normal normal 16px, sans-serif;
+      color: white;
+    }
+
+    &--description {
+      color: white;
+    }
+
+    &--button {
+      width: 100%;
+      color: white;
+      text-transform: unset !important;
+    }
   }
 }
 </style>

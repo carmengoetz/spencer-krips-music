@@ -8,8 +8,8 @@
         cols="12"
         sm="6"
         md="3"
-        v-for="product in categoryProducts()"
-        :key="product.index"
+        v-for="(product, index) in categoryProducts()"
+        :key="index"
       >
         <transition-group appear name="category__slide">
           <ProductCard
@@ -19,7 +19,7 @@
             :format="product.format"
             :price="product.price"
             :currency="product.currency"
-            :key="product.index"
+            :key="index"
           />
         </transition-group>
       </v-col>

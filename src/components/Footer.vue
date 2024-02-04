@@ -28,7 +28,6 @@
               class="footer__social-image mx-2 pa-5"
               elevation="0"
               :href="item.link"
-              :alt="item.name"
               target="_blank"
               rel="noreferrer"
               width="28"

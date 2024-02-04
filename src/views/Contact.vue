@@ -33,6 +33,7 @@
             name="form_subject"
             type="text"
             class="contact__form--input px-2"
+            :value="subject()"
           />
         </v-row>
         <v-row no-gutters class="mb-5">
@@ -96,6 +97,9 @@ export default Vue.extend({
   },
 
   methods: {
+    subject(): string {
+      return this.$route.params.subject;
+    },
     sendEmail(e: { target: string | HTMLFormElement }) {
       console.log(process.env.VUE_APP_EMAILJS_USER);
       emailjs
