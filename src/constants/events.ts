@@ -308,5 +308,49 @@ export const Events: { events: Event[] } = {
       image: require("../assets/events/rachmaninoff-dances.jpg"),
       link: "https://saskatoonsymphony.org/event/rachmaninoff-dances/",
     },
+    {
+      title: "Prairie Convergence",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2024-01-13T23:59:59"),
+      where: "The Bassment, Saskatoon",
+      what: "Arrangements & Performance",
+      description:
+        "A special live performance of composers Silas Friesen & Paul Suchan's eclectic album for large jazz ensemble, rooted in the big band tradition and influenced by classical, alt rock, and modern jazz music",
+      image: require("../assets/events/prairie-convergence.jpeg"),
+      link: "https://saskatoonjazzorchestra.com/event/prairie-convergence-january-13-2024/",
+    },
+    {
+      title: "TEDxUniversityofSaskatchewan reserviors on quiet",
+      who: "Spencer Krips",
+      date: new Date("2024-01-21T23:59:59"),
+      where: "University of Saskatchewan, Saskatoon",
+      what: "Performance",
+      description:
+        "Is music entirely limited to human-developed creations and performances? To answer this question, we are exploring the connection and equality between human-developed and natural music, immersing the audience in the interaction between performer and natural soundscape. Experience calm, contemplative music combining natural music and response from guitar and keyboard. Notice — or notice again — the beauty of our natural world, and consider the typically one-sided nature of our relationship with our natural world during reservoirs of quiet.",
+      image: require("../assets/events/tedx.png"),
+      link: "https://research.usask.ca/tedx/2024.php",
+    },
+    {
+      title: "The Lion King (World Premiere)",
+      who: "Saskatoon Symphony Orchestra",
+      date: new Date("2024-01-27T23:59:59"),
+      where: "TCU Place, Saskatoon",
+      what: "Performance - Bass Trombone",
+      description:
+        "The original 1994 version—features unforgettable music by an award-winning team, including Oscar® and GRAMMY®-winning superstar Elton John and Oscar® and GRAMMY®-winning lyricist Tim Rice, and score by Oscar® and GRAMMY®-winning composer Hans Zimmer, plus African vocal and choir arrangements by GRAMMY®-winning South African producer and composer Lebo M (Rhythm of the Pride Lands.)",
+      image: require("../assets/events/lion-king.jpeg"),
+      link: "https://saskatoonsymphony.org/event/lionking/",
+    },
+    {
+      title: "WINTERRUPTION: The Big Band Theory: To Boldly Swing...!",
+      who: "Saskatoon Jazz Orchestra & Footnotes",
+      date: new Date("2024-01-28T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - Trombone",
+      description:
+        "We have a working theory…That many humans in the dead of winter would enjoy 1 night to hear 4 big bands playing jazz! Join us for the second meeting of the bands featuring the UofS Jazz Ensemble, Stone Frigate Big Band, Footnotes Big Band and Saskatoon Jazz Orchestra. 2 fun filled sets of great music with 2 bands per set, Sunday January 28, 2023! We’ve subtitled this concert ’To Boldly Swing...’. Come enjoy music from Saskatoon created especially for Winterruption 2024!",
+      image: require("../assets/events/the-big-band-theory.jpeg"),
+      link: "https://www.facebook.com/events/1112520833255175",
+    },
   ],
 };
