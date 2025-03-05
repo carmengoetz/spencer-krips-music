@@ -352,5 +352,60 @@ export const Events: { events: Event[] } = {
       image: require("../assets/events/the-big-band-theory.jpeg"),
       link: "https://www.facebook.com/events/1112520833255175",
     },
+    {
+      title: "A Kolomyika Fantasy",
+      who: "Saskatoon Jazz Orchestra",
+      date: new Date("2024-03-09T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - 2nd Trombone",
+      description:
+        "Step into a captivating musical world with A Kolomyika Fantasy, a concert presented by the Saskatoon Jazz Orchestra (SJO) to help raise awareness of the ongoing war in Ukraine, and to help keep Ukrainians at home, here in Canada, and abroad in our hearts and minds.",
+      image: require("../assets/events/kolomyika-fantasy.png"),
+      link: "https://saskatoonjazzorchestra.com/event/a-kolomyika-fantasy-march-9-2024/",
+    },
+    {
+      title: "Strata Festival - Rumble in the Knox",
+      who: "The Strata Ensemble",
+      date: new Date("2024-06-15T23:59:59"),
+      where: "Knox United Church, Saskatoon",
+      what: "Composition",
+      description:
+        "The Strata Festival has rounded up the lowest acoustic instruments in the province—bass saxophone, tuba, contrabassoon, double bass, pipe organ, and contrabass clarinet—and have asked Saskatchewan composers to write for this unique combination. This concert, which was originally premiered during the COVID-19 pandemic as on online experience, will be presented in a live setting where audience goers can revel in the low rumblings of these instruments in Saskatoon’s cavernous Knox United Church.",
+      image: require("../assets/events/rumble-in-the-knox.png"),
+      link: "https://stratafest.com/event/rumble-in-the-knox-lowest-acoustic-instruments-of-saskatchewan/",
+    },
+    {
+      title: "Tiess will play Trombone and Electronic Music(!)",
+      who: "Tiess McKenzie",
+      date: new Date("2024-09-14T23:59:59"),
+      where: "PAVED Arts, Saskatoon",
+      what: "Performance - Trombone",
+      description:
+        "Featuring new and (relatively) recent works for trombone and electronics by yours (relatively) truly. I have a trombone, I have a laptop, I have some effects pedals. I've been making some music! Hear works based on my favourite movies, mathematical conjectures, and a chess game. This concert will also feature the trombone prowess of the one and only Spencer Krips!",
+      image: require("../assets/events/tiess.jpg"),
+      link: "https://www.facebook.com/events/8020214731403584",
+    },
+    {
+      title: "Big Band Theory 3.0: The Swing Awakens (Winterruption 2025)",
+      who: "Saskatoon Jazz Orchestra & Footnotes",
+      date: new Date("2025-01-26T23:59:59"),
+      where: "Broadway Theatre, Saskatoon",
+      what: "Performance - 2nd Trombone & Bass Trombone",
+      description:
+        "We have a working theory…That many humans in the dead of winter would enjoy 1 night to hear 4 big bands playing big band jazz live! Join us for the Broadway Theatre’s third annual meeting of the big bands in this unique concert series featuring the USASK Jazz Ensemble, Stone Frigate Big Band, Footnotes Big Band and Saskatoon Jazz Orchestra. ",
+      image: require("../assets/events/big-band-theory-3.jpg"),
+      link: "https://saskatoonjazzorchestra.com/event/big-band-theory-3-0-the-swing-awakens-winterruption-2025/",
+    },
+    {
+      title: "The Lost Birds",
+      who: "Saskatoon Symphony Orchestra",
+      date: new Date("2025-03-08T23:59:59"),
+      where: "TCU Place, Saskatoon",
+      what: "Performance - Choir",
+      description:
+        "We’re celebrating 40 seasons with our very own concertmaster Michael Swan! He’ll take centre stage to perform Wieniawski’s Violin Concerto No.1. Conductor Evan Mitchell leads your SSO, and choir, in Christopher Tin’s moving choral work The Lost Birds. Sweeping and elegiac, it's a haunting tribute to those soaring flocks that once filled our skies, but whose songs have since been silenced.",
+      image: require("../assets/events/the-lost-birds.jpg"),
+      link: "https://saskatoonsymphony.org/event/the-lost-birds/",
+    },
   ],
 };
